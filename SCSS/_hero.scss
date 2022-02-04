@@ -12,6 +12,7 @@
                 align-items: stretch;
                 img{
                     vertical-align: middle;
+                    padding-bottom: 10px;
                 }
                 h1{
                     font-size: 87px;
@@ -24,7 +25,25 @@
         }
         .horizontal {
             display: flex;
-            flex-wrap: wrap;   
+            flex-wrap: wrap;
+            .sociaisHero {
+                a{
+                    img{
+                        padding-bottom: 20px;
+                    }
+                }
+            }  
+        }
+        .followUs{
+
+            .rotate{
+                transform: rotate(-90deg);
+                font-family: "Poppins", sans-serif;
+                color: white;
+                font-size: 15px;
+                line-height: 20px;
+                height: 50px;
+            }
         }
     }
 }
@@ -41,9 +60,9 @@
         font-family: "Poppins", sans-serif;
         font-weight: medium;
         line-height: 15px;
-        background-color: white;
+        border:2px solid #ffffff;
         text-decoration: none;
-        color: #757575;
+        color: #ffffff;
         margin-bottom: 70px;
     }
 }

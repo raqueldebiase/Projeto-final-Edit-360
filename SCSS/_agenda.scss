@@ -4,12 +4,12 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 170px;
-
-    div{
-        width: 340px;
-        height: 736px;
-        background-color: gray; 
-        border-color: black;
-
+    .aumentarDiv{
+        overflow: hidden;
+        
     }
+}
+.divDestaque {
+    opacity: 50%;
+    transform: scale(1.1);
 }

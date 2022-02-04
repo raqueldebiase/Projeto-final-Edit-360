@@ -45,8 +45,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
 	<!--Links-->
-	<link rel="stylesheet" href="JS/pluggins/slick-1.8.1 3 /slick/slick.css">
-	<link rel="stylesheet" href="/JS/pluggins/slick-1.8.1 3 /slick/slick-theme.css">
 	<link rel="stylesheet" href="SCSS/main.css">
 </head>
 <!--GA-->
@@ -97,10 +95,13 @@
 			</div>
 			<div class="horizontal">
 				<span class="sociaisHero">
-					<span class="material-icons-outlined">highlight_off</span>
-					<span class="material-icons-outlined">highlight_off</span>
-					<span class="material-icons-outlined">highlight_off</span>
-					<span class="material-icons-outlined">highlight_off</span>	
+					<a href="www.facebook.com"><img src="/imagens/icons/sociaisVertical/facebook.png" alt=""></a>
+					<a href="www.instagram.com"><img src="/imagens/icons/sociaisVertical/instagram.png" alt=""></a>
+					<a href="www.youtube.com"><img src="/imagens/icons/sociaisVertical/youtube.png" alt=""></a>
+					<a href="www.tiktok.com"><img src="/imagens/icons/sociaisVertical/tiktok.png" alt=""></a>	
+				</span>
+				<span class="followUs">
+					<p class="rotate">follow us</p>
 				</span>
 			</div>
 		</div>
@@ -121,11 +122,11 @@
 			<h4>LINE UP</h4>
 		</div>
 		<div class="agendaLineUp">
-			<a href="#" class="dataShow">TODOS</a>
-			<a href="sobre.html" class="dataShow">10 JUN</a>
-			<a href="#" class="dataShow">11 JUN</a>
-			<a href="#" class="dataShow">12 JUN</a>
-			<a href="#" class="dataShow">13 JUN</a>
+			<a href="#" class="todos">TODOS</a>
+			<a href="sobre.html">10 <p>JUN</p></a>
+			<a href="#">11<p>JUN</p></a>
+			<a href="#">12<P>JUN</P></a>
+			<a href="#">13<p>JUN</p></a>
 		</div>
 		<div class="listaDosArtistas">
 			<div class="artistas">
@@ -151,19 +152,28 @@
 		</div>
 	</section>
 	<!--CALENDARIO-->
+	<section class="calendario">
+		<div class="bannerDatas">
+			<span><a href="#"><img src="/imagens/calendario/10.svg" alt=""></a></span>
+			<span><a href="#"><img src="/imagens/calendario/11.svg" alt=""></a></span>
+			<span><a href="#"><img src="/imagens/calendario/12.svg" alt=""></a></span>
+			<span><a href="#"><img src="/imagens/calendario/13.svg" alt=""></a></span>
+		</div>
+
+	</section>
 	<!--AGENDA-->
 	<section class="agenda">
-		<div class="concertos">
-			<a href="#" class="verConcertos"></a>
+		<div class="concertos" id="aumentarDiv">
+			<a href="#" class="verConcertos"><img src="/imagens/agenda/concertos.svg" alt="" onmouseover="aumenta(this)" onmouseout="diminui(this)"></a>
 		</div>
-		<div class="eventos">
-			<a href="#" class="verEventos"></a>
+		<div class="eventos" id="aumentarDiv">
+			<a href="#" class="verEventos"><img src="/imagens/agenda/desporto.svg" alt=""></a>
 		</div>
-		<div class="standUp">
-			<a href="#" class="verStandUp"></a>
+		<div class="standUp" id="aumentarDiv">
+			<a href="#" class="verStandUp"><img src="/imagens/agenda/standUp.svg" alt=""></a>
 		</div>
-		<div class="workshops">
-			<a href="#" class="verWorkshops"></a>
+		<div class="workshops" id="aumentarDiv">
+			<a href="#" class="verWorkshops"><img src="/imagens/agenda/works.svg" alt=""></a>
 		</div>
 	</section>
 
@@ -282,8 +292,7 @@
 			<img src="/imagens/logo/buondiFooter.svg" alt="">
 		</div>
 	</footer>
-<script src="/JS/JQUERY /jquery-3.6.0.js"></script>
-<script src="JS/pluggins/slick-1.8.1 3 /slick/slick.js"></script>
+<script src="jQuery/jquery-3.6.0.js"></script>
 <script src="main.js"></script>
 </body>
 

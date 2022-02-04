@@ -143,6 +143,7 @@ body {
 
 .bannerPrincipal .tituloEsociais .vertical span img {
   vertical-align: middle;
+  padding-bottom: 10px;
 }
 
 .bannerPrincipal .tituloEsociais .vertical span h1 {
@@ -159,6 +160,20 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.bannerPrincipal .tituloEsociais .horizontal .sociaisHero a img {
+  padding-bottom: 20px;
+}
+
+.bannerPrincipal .tituloEsociais .followUs .rotate {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+  height: 50px;
 }
 
 .botao {
@@ -182,9 +197,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: medium;
   line-height: 15px;
-  background-color: white;
+  border: 2px solid #ffffff;
   text-decoration: none;
-  color: #757575;
+  color: #ffffff;
   margin-bottom: 70px;
 }
 
@@ -197,6 +212,7 @@ body {
 
 .lineUp {
   height: 100%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -212,19 +228,37 @@ body {
   font-size: 42px;
   font-family: "Poppins", sans-serif;
   line-height: 50%;
-  color: #8d8d8d;
+  color: #ffffff;
   padding: 40px;
 }
 
-.lineUp .agendaLineUp .dataShow {
+.lineUp .agendaLineUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  text-align: center;
+}
+
+.lineUp .agendaLineUp a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  color: #8d8d8d;
+  font-size: 60px;
+  color: #ffffff;
   line-height: 50%;
-  font-weight: bold;
-  border-radius: 41px;
-  background-color: white;
+  font-weight: 400;
+  border-radius: 26px;
+  border: 1px solid #ffffff;
+  width: 108px;
+  height: 111px;
+}
+
+.lineUp .agendaLineUp a p {
+  font-size: 30px;
+}
+
+.lineUp .agendaLineUp .todos {
+  font-size: 26px;
 }
 
 .lineUp .listaDosArtistas {
@@ -236,7 +270,7 @@ body {
   display: grid;
   place-items: center;
   font-family: "Poppins", sans-serif;
-  color: #8d8d8d;
+  color: #ffffff;
   padding: 150px 0 15px 0;
 }
 
@@ -254,6 +288,35 @@ body {
   font-size: 67px;
 }
 
+.calendario {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-bottom: 250px;
+}
+
+.calendario span:nth-child(even) {
+  margin-top: 100px;
+}
+
+.calendario .bannerDatas {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calendario .bannerDatas span a img {
+  margin: 0;
+}
+
 .agenda {
   max-width: 100%;
   display: -webkit-box;
@@ -267,11 +330,14 @@ body {
   margin-bottom: 170px;
 }
 
-.agenda div {
-  width: 340px;
-  height: 736px;
-  background-color: gray;
-  border-color: black;
+.agenda .aumentarDiv {
+  overflow: hidden;
+}
+
+.divDestaque {
+  opacity: 50%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .bannerEspaco {

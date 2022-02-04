@@ -1,0 +1,24 @@
+.calendario{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 250px;
+    span:nth-child(even){
+        margin-top: 100px;
+    }
+    .bannerDatas{
+        max-width: 100%;
+        display: flex;
+        span{
+            a{
+                img{
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}
+
