@@ -1,0 +1,618 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  padding: 0;
+}
+
+body {
+  background-color: rgba(201, 201, 201, 0.616);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 120px 40px 120px;
+  max-width: 100%;
+  height: 100px;
+}
+
+.menu .menuPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.menu .menuPrincipal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  gap: 40px;
+  margin-left: 20px;
+}
+
+.menu .menuPrincipal ul a {
+  text-decoration: none;
+}
+
+.menu .menuPrincipal ul a img {
+  width: 44.57px;
+  height: 44.57px;
+}
+
+.menu .menuPrincipal ul a li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 02px;
+  color: white;
+  list-style: none;
+}
+
+.menu .menuPrincipal span {
+  color: white;
+  width: 25.68px;
+  height: 25.68px;
+  vertical-align: middle;
+}
+
+.bannerPrincipal .tituloEsociais {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 95% 3%;
+      grid-template-columns: 95% 3%;
+  place-items: center;
+  overflow: hidden;
+}
+
+.bannerPrincipal .tituloEsociais .vertical {
+  margin: 80px 310px 0px 160px;
+}
+
+.bannerPrincipal .tituloEsociais .vertical span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.bannerPrincipal .tituloEsociais .vertical span img {
+  vertical-align: middle;
+}
+
+.bannerPrincipal .tituloEsociais .vertical span h1 {
+  font-size: 87px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  line-height: 139px;
+  color: #8d8d8d;
+}
+
+.bannerPrincipal .tituloEsociais .horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.botao .botaoBilhete {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 228px;
+  height: 47px;
+  border-radius: 41px;
+  font-family: "Poppins", sans-serif;
+  font-weight: medium;
+  line-height: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: #757575;
+  margin-bottom: 70px;
+}
+
+.botaoScroll {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-bottom: 100px;
+}
+
+.lineUp {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+.lineUp .tituloLineUp {
+  height: 100%;
+}
+
+.lineUp .tituloLineUp h4 {
+  font-size: 42px;
+  font-family: "Poppins", sans-serif;
+  line-height: 50%;
+  color: #8d8d8d;
+  padding: 40px;
+}
+
+.lineUp .agendaLineUp .dataShow {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #8d8d8d;
+  line-height: 50%;
+  font-weight: bold;
+  border-radius: 41px;
+  background-color: white;
+}
+
+.lineUp .listaDosArtistas {
+  height: 100%;
+}
+
+.lineUp .listaDosArtistas .artistas {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #8d8d8d;
+  padding: 150px 0 15px 0;
+}
+
+.lineUp .listaDosArtistas .artistas h4 {
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+
+.lineUp .listaDosArtistas .artistas h2 {
+  font-size: 87px;
+  font-weight: 800;
+}
+
+.lineUp .listaDosArtistas .artistas small {
+  font-size: 67px;
+}
+
+.agenda {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 170px;
+}
+
+.agenda div {
+  width: 340px;
+  height: 736px;
+  background-color: gray;
+  border-color: black;
+}
+
+.bannerEspaco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+}
+
+.bannerEspaco div {
+  background-color: rgba(128, 128, 128, 0.507);
+  width: 465px;
+  height: 200px;
+  padding: 150px;
+}
+
+.bannerEspaco div h6 {
+  color: white;
+  font-size: 37px;
+  font-family: "Poppins", sans-serif;
+}
+
+.bannerEspaco div h3 {
+  color: white;
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+}
+
+.bannerEspaco div small {
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+article {
+  overflow: hidden;
+}
+
+article div h3 {
+  font-size: 54px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 80px;
+  margin-left: 160px;
+}
+
+article .artGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 25% 30%;
+      grid-template-columns: 35% 25% 30%;
+  padding: 80px;
+  margin-left: 80px;
+}
+
+article .artGrid .quadrado1 {
+  background-color: #505050;
+  height: 346px;
+  width: 475px;
+}
+
+article .artGrid .quadrado2 {
+  background-color: #a8a7a7;
+}
+
+article .artGrid .quadrado3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+article .artGrid .quadrado3 .imagem {
+  width: 190px;
+  height: 173px;
+  background-color: black;
+}
+
+article .artGrid .quadrado3 .txt {
+  background-color: green;
+  width: 190px;
+  height: 173px;
+}
+
+article .dirEsq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 160px;
+  margin-bottom: 80px;
+}
+
+.newsletter {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #A1A1A1;
+  height: 350px;
+  padding-bottom: 40px;
+}
+
+.newsletter div h6 {
+  font-size: 37px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-top: 44px;
+}
+
+.newsletter form {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.newsletter form div .paraEmail {
+  width: 540px;
+  height: 47px;
+  border-radius: 41px;
+  border-style: none;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.newsletter form .inputCondicoes {
+  padding: 20px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter form .inputCondicoes label {
+  font-size: 16px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  padding: 8px;
+}
+
+.newsletter form div .botaoEnviar {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 160px;
+  height: 47px;
+  border-radius: 41px;
+  border-style: none;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  margin: auto;
+}
+
+.newsletter form div .botaoEnviar:hover {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer .footerGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  place-items: left;
+  max-width: 100%;
+  grid-gap: 64px;
+  padding: 60px;
+  margin: auto;
+  overflow: hidden;
+}
+
+footer .footerGrid .redesSociais {
+  margin-right: 120px;
+}
+
+footer .footerGrid .endereco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+}
+
+footer .footerGrid .endereco img {
+  margin-right: 30px;
+}
+
+footer .footerGrid .endereco p {
+  font-size: 22.76px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  line-height: 24.5px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: #a1a1a1;
+}
+
+footer .footerGrid .politicas ul a {
+  text-decoration: none;
+}
+
+footer .footerGrid .politicas ul a li {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  line-height: 44px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #a1a1a1;
+}
+
+footer .footerGrid .menuFooter {
+  margin-left: 170px;
+}
+
+footer .footerGrid .menuFooter ul a {
+  text-decoration: none;
+}
+
+footer .footerGrid .menuFooter ul a li {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  line-height: 24px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #a1a1a1;
+}
+
+footer .imgFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.informacoesFestival {
+  margin-left: 180px;
+  padding-bottom: 100px;
+}
+
+.informacoesFestival .tituloSobreFestival {
+  font-size: 54px;
+  color: #8d8d8d;
+  line-height: 139.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.informacoesFestival .gridInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.informacoesFestival .gridInfo .onde {
+  max-width: 250px;
+}
+
+.informacoesFestival .gridInfo .onde img {
+  margin-bottom: 20px;
+}
+
+.informacoesFestival .gridInfo .onde h6 {
+  font-size: 30px;
+  color: #4e4e4e;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.informacoesFestival .gridInfo .onde p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #4e4e4e;
+}
+
+.informacoesFestival .gridInfo .quando {
+  max-width: 250px;
+}
+
+.informacoesFestival .gridInfo .quando img {
+  margin-bottom: 20px;
+}
+
+.informacoesFestival .gridInfo .quando h6 {
+  font-size: 30px;
+  color: #4e4e4e;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.informacoesFestival .gridInfo .quando p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #4e4e4e;
+}
+
+.informacoesFestival .gridInfo .artistas {
+  max-width: 250px;
+}
+
+.informacoesFestival .gridInfo .artistas h4 {
+  color: #4e4e4e;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.informacoesFestival .gridInfo .artistas h6 {
+  font-size: 30px;
+  color: #4e4e4e;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.informacoesFestival .gridInfo .artistas p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #4e4e4e;
+}
+/*# sourceMappingURL=main.css.map */

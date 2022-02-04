@@ -1,0 +1,54 @@
+.bannerPrincipal {
+    .tituloEsociais{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 95% 3%;
+        place-items: center;
+        overflow: hidden;
+        .vertical {
+            margin: 80px 310px 0px 160px;
+            span{
+                display: flex;
+                align-items: stretch;
+                img{
+                    vertical-align: middle;
+                }
+                h1{
+                    font-size: 87px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 800;
+                    line-height: 139px;
+                    color: #8d8d8d;
+                }
+            }
+        }
+        .horizontal {
+            display: flex;
+            flex-wrap: wrap;   
+        }
+    }
+}
+.botao {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .botaoBilhete {
+        display: grid;
+        place-items: center;
+        width: 228px;
+        height: 47px;
+        border-radius: 41px;
+        font-family: "Poppins", sans-serif;
+        font-weight: medium;
+        line-height: 15px;
+        background-color: white;
+        text-decoration: none;
+        color: #757575;
+        margin-bottom: 70px;
+    }
+}
+.botaoScroll {
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}

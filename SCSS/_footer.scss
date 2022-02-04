@@ -1,0 +1,68 @@
+footer{
+    display: grid;
+    place-items: center;
+    .footerGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: left;
+        max-width: 100%;
+        grid-gap: 64px ;
+        padding: 60px;
+        margin: auto;
+        overflow: hidden;
+        .redesSociais{
+            margin-right: 120px;
+        }
+        .endereco{
+            display: flex;
+            margin-left: 100px;
+            img {
+                margin-right: 30px;
+            }
+            p{
+                font-size: 22.76px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: lighter;
+                line-height: 24.5px;
+                justify-content: left;
+                color: #a1a1a1; 
+            }
+       
+        }
+        .politicas {
+            ul{
+                a{
+                    text-decoration: none;
+                    li{
+                        font-size: 18px;
+                        font-family: "Poppins", sans-serif;
+                        line-height: 44px;
+                        align-items: flex-start;
+                        color: #a1a1a1;
+                        
+                    }
+                }
+            }  
+        }
+        .menuFooter {
+            margin-left: 170px;
+            ul {
+                a{
+                    text-decoration: none;
+                    li{
+                        font-size: 18px;
+                        font-family: "Poppins", sans-serif;
+                        line-height: 24px;
+                        align-items: flex-start;
+                        color: #a1a1a1;
+                    }
+                }
+            }
+        }
+    }
+
+    .imgFooter{
+        display: flex;
+        justify-content: center;
+    }
+}

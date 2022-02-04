@@ -1,0 +1,15 @@
+.agenda {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 170px;
+
+    div{
+        width: 340px;
+        height: 736px;
+        background-color: gray; 
+        border-color: black;
+
+    }
+}

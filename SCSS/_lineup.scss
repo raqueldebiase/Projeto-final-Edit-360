@@ -1,0 +1,50 @@
+.lineUp{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-bottom: 120px;
+    .tituloLineUp{
+        height: 100%;
+        h4{
+            font-size: 42px;
+            font-family: "Poppins", sans-serif;
+            line-height: 50%;
+            color: #8d8d8d; 
+            padding: 40px; 
+        }
+    }
+    .agendaLineUp{
+        .dataShow{
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            color: #8d8d8d;
+            line-height: 50%;
+            font-weight: bold;
+            border-radius: 41px;
+            background-color: white; 
+        }
+    }
+    .listaDosArtistas {
+        height: 100%;
+        .artistas{
+            display: grid;
+            place-items: center;
+            font-family: "Poppins", sans-serif;
+            color: #8d8d8d;
+            padding: 150px 0 15px 0;
+            h4{
+                font-size: 48px;
+                padding-bottom: 30px;
+            }
+            h2{
+                font-size: 87px;
+                font-weight: 800;
+            }
+            small {
+                font-size: 67px;
+            }
+        }
+    }
+}
