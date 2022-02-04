@@ -331,13 +331,7 @@ body {
 }
 
 .agenda .aumentarDiv {
-  overflow: hidden;
-}
-
-.divDestaque {
-  opacity: 50%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  margin: 0;
 }
 
 .bannerEspaco {
