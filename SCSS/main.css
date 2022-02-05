@@ -588,6 +588,73 @@ article .dirEsq {
   margin-bottom: 80px;
 }
 
+.novidade {
+  overflow: hidden;
+}
+
+.novidade h3 {
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+  padding: 75px 0 0 150px;
+  line-height: 60px;
+  margin-bottom: 130px;
+}
+
+.novidade .bannerDuploNovidades {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-bottom: 150px;
+  height: 454px;
+  position: relative;
+  overflow: hidden;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone {
+  background-color: #ED1C24;
+  padding: 48px 0 0 156px;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone small {
+  font-size: 39px;
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone p {
+  font-size: 33px;
+  font-weight: regular;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone .store {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 30px;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone span {
+  position: relative;
+  z-index: 1;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone span .iphone {
+  position: absolute;
+  left: 250px;
+  top: -500px;
+  z-index: -1;
+}
+
+.novidade .bannerDuploNovidades .bannerNewsletter {
+  background-color: #A92227;
+}
+
 .newsletter {
   display: -ms-grid;
   display: grid;
