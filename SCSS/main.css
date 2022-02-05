@@ -635,6 +635,15 @@ footer {
   overflow: hidden;
 }
 
+@media screen and (max-width: 400px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 footer .footerGrid {
   display: -ms-grid;
   display: grid;
@@ -647,8 +656,30 @@ footer .footerGrid {
   margin: auto;
 }
 
+@media screen and (max-width: 400px) {
+  footer .footerGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 footer .footerGrid .redesSociais {
   margin-right: 120px;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .redesSociais {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 footer .footerGrid .endereco {
@@ -656,6 +687,12 @@ footer .footerGrid .endereco {
   display: -ms-flexbox;
   display: flex;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .endereco {
+    margin-left: 0;
+  }
 }
 
 footer .footerGrid .endereco img {
@@ -671,6 +708,14 @@ footer .footerGrid .endereco p {
       -ms-flex-pack: left;
           justify-content: left;
   color: #a1a1a1;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .politicas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 footer .footerGrid .politicas ul a {
@@ -689,6 +734,12 @@ footer .footerGrid .politicas ul a li {
 
 footer .footerGrid .menuFooter {
   margin-left: 170px;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .menuFooter {
+    margin-left: 0;
+  }
 }
 
 footer .footerGrid .menuFooter ul a {

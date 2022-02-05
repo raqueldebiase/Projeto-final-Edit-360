@@ -3,6 +3,10 @@ footer{
     place-items: center;
     max-width: 100%;
     overflow: hidden;
+    @media screen and (max-width: 400px){
+        display: grid;
+        grid-template-columns: 100%;
+    }
     .footerGrid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -11,12 +15,24 @@ footer{
         grid-gap: 64px ;
         padding: 60px;
         margin: auto;
+        @media screen and (max-width: 400px){
+            display: grid;
+            grid-template-columns: 100%;
+        }
         .redesSociais{
             margin-right: 120px;
+            @media screen and (max-width: 400px){
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
         }
         .endereco{
             display: flex;
             margin-left: 100px;
+            @media screen and (max-width: 400px){
+                margin-left: 0;
+            }
             img {
                 margin-right: 30px;
             }
@@ -31,6 +47,9 @@ footer{
        
         }
         .politicas {
+            @media screen and (max-width: 400px){
+                display: flex;
+            }
             ul{
                 a{
                     text-decoration: none;
@@ -40,13 +59,15 @@ footer{
                         line-height: 44px;
                         align-items: flex-start;
                         color: #a1a1a1;
-                        
                     }
                 }
-            }  
+            } 
         }
         .menuFooter {
             margin-left: 170px;
+            @media screen and (max-width: 400px){
+                margin-left: 0;
+            }
             ul {
                 a{
                     text-decoration: none;
