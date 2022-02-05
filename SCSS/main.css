@@ -138,7 +138,7 @@ body {
         grid-template-columns: 100%;
     place-items: center;
     max-width: 100%;
-    padding-left: 170px;
+    padding-left: 150px;
   }
 }
 
@@ -466,6 +466,12 @@ body {
   color: white;
   font-size: 54px;
   font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerEspaco div h3 {
+    margin-bottom: 20px;
+  }
 }
 
 .bannerEspaco div small {
