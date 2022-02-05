@@ -544,11 +544,24 @@ article .dirEsq {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 400px) {
+  .newsletter {
+    max-width: 100%;
+  }
+}
+
 .newsletter div h6 {
   font-size: 37px;
   color: white;
   font-family: "Poppins", sans-serif;
   padding-top: 44px;
+}
+
+@media screen and (max-width: 400px) {
+  .newsletter div h6 {
+    margin-left: 20px;
+    font-size: 24px;
+  }
 }
 
 .newsletter form {
@@ -564,6 +577,12 @@ article .dirEsq {
   border-style: none;
   padding-left: 20px;
   font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .newsletter form div .paraEmail {
+    width: 320px;
+  }
 }
 
 .newsletter form .inputCondicoes {
