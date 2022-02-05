@@ -403,7 +403,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 170px;
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 400px) {
@@ -482,6 +482,33 @@ body {
   color: white;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+.valores {
+  margin: 0 0 0 150px;
+}
+
+.valores h3 {
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+  color: #8a7b7b;
+}
+
+.valores .h3Bold {
+  font-weight: 600;
+}
+
+.valores p {
+  margin: 44px 0 75px 0;
+  font-family: "Poppins", sans-serif;
+  color: yellow;
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 600px;
+}
+
+.valores div {
+  margin-left: -20px;
 }
 
 article {
