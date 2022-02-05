@@ -1,9 +1,10 @@
 .bannerEspaco {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     overflow: hidden;
+    margin-top: 200px;
     @media screen and (max-width: 400px){
         width: 100%;
         display: grid;
@@ -11,27 +12,6 @@
         grid-template-columns: 1fr;        
     }
     div {
-        background-color: rgba(128, 128, 128, 0.507);
-        height: 200px;
-        padding: 40px;
-        h6 {
-            color: white;
-            font-size: 37px;
-            font-family: "Poppins", sans-serif;
-        }
-        h3 {
-            color: white;
-            font-size: 54px;
-            font-family: "Poppins", sans-serif;
-            @media screen and (max-width: 400px){
-                margin-bottom: 20px;
-            }
-        }
-        small {
-            color: white;
-            font-size: 16px;
-            font-family: "Poppins", sans-serif;
-        }
 
     }
 }

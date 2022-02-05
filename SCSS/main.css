@@ -438,9 +438,10 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   overflow: hidden;
+  margin-top: 200px;
 }
 
 @media screen and (max-width: 400px) {
@@ -452,36 +453,6 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-}
-
-.bannerEspaco div {
-  background-color: rgba(128, 128, 128, 0.507);
-  height: 200px;
-  padding: 40px;
-}
-
-.bannerEspaco div h6 {
-  color: white;
-  font-size: 37px;
-  font-family: "Poppins", sans-serif;
-}
-
-.bannerEspaco div h3 {
-  color: white;
-  font-size: 54px;
-  font-family: "Poppins", sans-serif;
-}
-
-@media screen and (max-width: 400px) {
-  .bannerEspaco div h3 {
-    margin-bottom: 20px;
-  }
-}
-
-.bannerEspaco div small {
-  color: white;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 .valores {
@@ -501,7 +472,7 @@ body {
 .valores p {
   margin: 44px 0 75px 0;
   font-family: "Poppins", sans-serif;
-  color: yellow;
+  color: gray;
   font-size: 15px;
   line-height: 20px;
   max-width: 600px;
