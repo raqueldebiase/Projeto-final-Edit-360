@@ -1,6 +1,8 @@
 footer{
     display: grid;
     place-items: center;
+    max-width: 100%;
+    overflow: hidden;
     .footerGrid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -9,7 +11,6 @@ footer{
         grid-gap: 64px ;
         padding: 60px;
         margin: auto;
-        overflow: hidden;
         .redesSociais{
             margin-right: 120px;
         }
