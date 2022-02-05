@@ -255,6 +255,17 @@ body {
   margin-bottom: 120px;
 }
 
+@media screen and (max-width: 400px) {
+  .lineUp {
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+
 .lineUp .tituloLineUp {
   height: 100%;
 }
@@ -267,12 +278,31 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 400px) {
+  .lineUp .tituloLineUp h4 {
+    font-size: 24px;
+  }
+}
+
 .lineUp .agendaLineUp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 26px;
   text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .agendaLineUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .lineUp .agendaLineUp a {
@@ -298,6 +328,13 @@ body {
 
 .lineUp .listaDosArtistas {
   height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas {
+    max-width: 100%;
+  }
 }
 
 .lineUp .listaDosArtistas .artistas {
@@ -317,6 +354,12 @@ body {
 .lineUp .listaDosArtistas .artistas h2 {
   font-size: 87px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas .artistas h2 {
+    font-size: 43px;
+  }
 }
 
 .lineUp .listaDosArtistas .artistas small {

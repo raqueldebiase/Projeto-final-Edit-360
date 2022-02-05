@@ -5,6 +5,12 @@
     place-items: center;
     overflow: hidden;
     margin-bottom: 120px;
+    @media screen and (max-width: 400px){
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
     .tituloLineUp{
         height: 100%;
         h4{
@@ -13,12 +19,22 @@
             line-height: 50%;
             color: #ffffff; 
             padding: 40px; 
+            @media screen and (max-width: 400px){
+                font-size: 24px;
+
+            }
         }
     }
     .agendaLineUp{
         display: flex;
         gap: 26px;
         text-align: center;
+        @media screen and (max-width: 400px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
         a{
             text-decoration: none;
             font-family: "Poppins", sans-serif;
@@ -41,6 +57,11 @@
     }
     .listaDosArtistas {
         height: 100%;
+        width: 100%;
+        @media screen and (max-width: 400px){
+           max-width: 100%;
+
+        }
         .artistas{
             display: grid;
             place-items: center;
@@ -54,6 +75,9 @@
             h2{
                 font-size: 87px;
                 font-weight: 800;
+                @media screen and (max-width: 400px){
+                    font-size: 43px;
+                }
             }
             small {
                 font-size: 67px;
