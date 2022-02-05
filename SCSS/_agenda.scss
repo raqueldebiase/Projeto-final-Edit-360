@@ -1,9 +1,23 @@
 .agenda {
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     margin-bottom: 170px;
+    @media screen and (max-width: 400px){
+        max-width: 100%;
+        display: grid;
+        overflow: hidden;
+    }
+    img{
+        @media screen and (max-width: 400px){
+            width: 120%;
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            overflow: hidden;
+
+
+        }
+    }
     .aumentarDiv{
         margin: 0;
     }
