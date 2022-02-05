@@ -25,16 +25,13 @@
             span{
                 display: flex;
                 align-items: stretch;
-                img{
-                    vertical-align: middle;
-                    padding-bottom: 10px;
-                }
                 h1{
                     font-size: 87px;
                     font-family: "Poppins", sans-serif;
                     font-weight: 800;
                     line-height: 139px;
                     color: #ffffff;
+                    margin-top: 38px;
                     @media screen and (max-width: 400px){
                         font-size: 20px;
                         line-height: 60px;

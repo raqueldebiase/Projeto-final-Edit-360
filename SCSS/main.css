@@ -57,7 +57,11 @@ input {
 }
 
 body {
-  background-color: rgba(201, 201, 201, 0.616);
+  background-image: url(/imagens/BG/header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: contain;
+  -o-background-size: contain;
 }
 
 .menu {
@@ -162,17 +166,13 @@ body {
           align-items: stretch;
 }
 
-.bannerPrincipal .tituloEsociais .vertical span img {
-  vertical-align: middle;
-  padding-bottom: 10px;
-}
-
 .bannerPrincipal .tituloEsociais .vertical span h1 {
   font-size: 87px;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   line-height: 139px;
   color: #ffffff;
+  margin-top: 38px;
 }
 
 @media screen and (max-width: 400px) {
@@ -397,8 +397,12 @@ body {
 
 .agenda {
   max-width: 100%;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 170px;
 }
 
