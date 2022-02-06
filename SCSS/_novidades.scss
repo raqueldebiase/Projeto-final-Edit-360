@@ -14,10 +14,10 @@
         height: 454px;
         position: relative;
         overflow: hidden;
+
         .bannerIphone{
             background-color: #ED1C24;
             padding: 48px 0 0 156px;
-
             small{
                 font-size: 39px;
                 font-weight: bold;
@@ -37,6 +37,7 @@
                 grid-template-columns: 1fr;
                 margin-top: 30px;
             }
+            /*
             span{
                 position: relative;
                 z-index: 1;
@@ -46,11 +47,83 @@
                     top: -500px;
                     z-index: -1;
                 }
-            }
-
+            */
         }
+        .imgIphone{
+            position: absolute;
+            left: 400px;
+            top: -100px;
+            z-index: 1;
+        }
+
         .bannerNewsletter{
             background-color: #A92227;
+            padding: 48px 0 0 120px;
+            h6{
+                font-size: 39px;
+                font-weight: bold;
+                font-family: "Poppins", sans-serif;
+                color: white;
+                margin-bottom: 40px;
+                line-height: 45px;
+            }
+            form {
+                display: block;
+                max-width: 100%;
+                overflow: hidden;
+                div{
+                    .paraEmail{
+                        width: 540px;
+                        height: 47px;
+                        border-radius: 41px;
+                        border-style: none;
+                        padding-left: 20px;
+                        font-family: "Poppins", sans-serif;
+                        @media screen and (max-width: 400px){
+                            width: 320px;
+            
+                        }
+                    }
+                }
+                .inputCondicoes {
+                    padding: 20px;
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    margin-left: -20px;
+                    label {
+                        font-size: 16px;
+                        color: white;
+                        font-family: "Poppins", sans-serif;
+                        font-weight:lighter;
+                        padding: 8px;  
+                    }
+                }
+            }
+            .enviar {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 65px;
+                margin-right: -150px;
+                .botaoEnviar{
+                    display: grid;
+                    place-items: center;
+                    width: 160px;
+                    height: 47px;
+                    border-radius: 41px;
+                    border-style: none;
+                    background-color: black;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 15px;
+                    text-decoration: none;
+                    margin: auto;
+                }
+                .botaoEnviar:hover {
+                    background-color: rgba(0, 0, 0, 0.267);
+                }
+            }
         } 
     }
 
