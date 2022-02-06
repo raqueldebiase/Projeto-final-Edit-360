@@ -56,19 +56,16 @@ input {
   padding: 0;
 }
 
-body {
-  background-image: url(/imagens/BG/header.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: contain;
-  -o-background-size: contain;
-  margin: 0;
-  padding: 0;
-}
-
 .bgDegrade {
+  padding-top: 100px;
   background: #663567;
   background: linear-gradient(164deg, #663567 0%, black 100%);
+}
+
+.bgHeaderLineUp {
+  background-size: cover;
+  background-image: url(/imagens/BG/bgPrincipal.svg);
+  background-position: center;
 }
 
 .menu {
@@ -480,7 +477,7 @@ body {
 .valores h3 {
   font-size: 54px;
   font-family: "Poppins", sans-serif;
-  color: #8a7b7b;
+  color: white;
 }
 
 .valores .h3Bold {
@@ -490,7 +487,7 @@ body {
 .valores p {
   margin: 44px 0 75px 0;
   font-family: "Poppins", sans-serif;
-  color: gray;
+  color: #f1f1f1;
   font-size: 15px;
   line-height: 20px;
   max-width: 600px;
@@ -522,7 +519,6 @@ article .artGrid {
 }
 
 article .artGrid .quadrado1 {
-  background-color: #ffffff;
   height: 346px;
   width: 475px;
 }
@@ -559,18 +555,20 @@ article .artGrid .quadrado3 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  background-color: white;
 }
 
 article .artGrid .quadrado3 .imagem {
   width: 190px;
-  height: 173px;
+  height: 171px;
 }
 
 article .artGrid .quadrado3 .txt {
   width: 190px;
   height: 173px;
-  padding-left: 15px;
   margin-right: -14px;
+  background-color: white;
 }
 
 article .artGrid .quadrado3 .txt h5 {
@@ -578,6 +576,7 @@ article .artGrid .quadrado3 .txt h5 {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   margin-top: 23px;
+  margin-left: 14px;
 }
 
 article .artGrid .quadrado3 .txt h4 {
@@ -585,6 +584,7 @@ article .artGrid .quadrado3 .txt h4 {
   font-size: 15px;
   color: #4e4e4e;
   margin-top: 10px;
+  margin-left: 14px;
 }
 
 article .artGrid .quadrado3 .txt p {
@@ -593,6 +593,7 @@ article .artGrid .quadrado3 .txt p {
   color: #4e4e4e;
   margin-top: 13px;
   line-height: 15px;
+  margin-left: 14px;
 }
 
 article .dirEsq {
@@ -616,6 +617,7 @@ article .dirEsq {
   padding: 75px 0 0 150px;
   line-height: 60px;
   margin-bottom: 130px;
+  color: white;
 }
 
 .novidade .bannerDuploNovidades {
@@ -767,6 +769,7 @@ article .dirEsq {
 
 .bannerColorido {
   max-width: 100%;
+  overflow: hidden;
 }
 
 .bannerColorido div {
