@@ -605,7 +605,7 @@ article .dirEsq {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  margin-bottom: 150px;
+  margin-bottom: 115px;
   height: 454px;
   position: relative;
   overflow: hidden;
@@ -613,7 +613,7 @@ article .dirEsq {
 
 .novidade .bannerDuploNovidades .bannerIphone {
   background-color: #ED1C24;
-  padding: 48px 0 0 156px;
+  padding: 48px 0 0 120px;
   /*
             span{
                 position: relative;
@@ -647,7 +647,8 @@ article .dirEsq {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-left: -18px;
 }
 
 .novidade .bannerDuploNovidades .imgIphone {
@@ -746,96 +747,16 @@ article .dirEsq {
   background-color: rgba(0, 0, 0, 0.267);
 }
 
-.newsletter {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  background-color: #A1A1A1;
-  height: 350px;
-  padding-bottom: 40px;
-}
-
-@media screen and (max-width: 400px) {
-  .newsletter {
-    max-width: 100%;
-  }
-}
-
-.newsletter div h6 {
-  font-size: 37px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  padding-top: 44px;
-}
-
-@media screen and (max-width: 400px) {
-  .newsletter div h6 {
-    margin-left: 20px;
-    font-size: 24px;
-  }
-}
-
-.newsletter form {
-  display: block;
+.bannerColorido {
   max-width: 100%;
-  overflow: hidden;
 }
 
-.newsletter form div .paraEmail {
-  width: 540px;
-  height: 47px;
-  border-radius: 41px;
-  border-style: none;
-  padding-left: 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-@media screen and (max-width: 400px) {
-  .newsletter form div .paraEmail {
-    width: 320px;
-  }
-}
-
-.newsletter form .inputCondicoes {
-  padding: 20px;
-  max-width: 100%;
+.bannerColorido div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.newsletter form .inputCondicoes label {
-  font-size: 16px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  padding: 8px;
-}
-
-.newsletter form div .botaoEnviar {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 160px;
-  height: 47px;
-  border-radius: 41px;
-  border-style: none;
-  background-color: black;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-  margin: auto;
-}
-
-.newsletter form div .botaoEnviar:hover {
-  background-color: rgba(0, 0, 0, 0.267);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 footer {

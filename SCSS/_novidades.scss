@@ -10,14 +10,14 @@
     .bannerDuploNovidades{
         display: grid;
         grid-template-columns: 50% 50%;
-        margin-bottom: 150px;
+        margin-bottom: 115px;
         height: 454px;
         position: relative;
         overflow: hidden;
 
         .bannerIphone{
             background-color: #ED1C24;
-            padding: 48px 0 0 156px;
+            padding: 48px 0 0 120px;
             small{
                 font-size: 39px;
                 font-weight: bold;
@@ -35,7 +35,8 @@
             .store {
                 display: grid;
                 grid-template-columns: 1fr;
-                margin-top: 30px;
+                margin-top: 40px;
+                margin-left: -18px;
             }
             /*
             span{
