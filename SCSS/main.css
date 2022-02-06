@@ -381,6 +381,16 @@ input {
   font-size: 67px;
 }
 
+.dia10 {
+  display: none;
+}
+
+.mostrarDia10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .calendario {
   max-width: 100%;
   display: -webkit-box;
@@ -852,90 +862,90 @@ footer p {
     grid-template-columns: 100%;
 }
 */
-.informacoesFestival {
+.dia10 {
   margin-left: 180px;
   padding-bottom: 100px;
 }
 
-.informacoesFestival .tituloSobreFestival {
+.dia10 .tituloSobreFestival {
   font-size: 54px;
-  color: #8d8d8d;
+  color: #faf8f8;
   line-height: 139.5px;
   font-family: "Poppins", sans-serif;
 }
 
-.informacoesFestival .gridInfo {
+.dia10 .gridInfo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.informacoesFestival .gridInfo .onde {
+.dia10 .gridInfo .onde {
   max-width: 250px;
 }
 
-.informacoesFestival .gridInfo .onde img {
+.dia10 .gridInfo .onde img {
   margin-bottom: 20px;
 }
 
-.informacoesFestival .gridInfo .onde h6 {
+.dia10 .gridInfo .onde h6 {
   font-size: 30px;
-  color: #4e4e4e;
+  color: #ffffff;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 
-.informacoesFestival .gridInfo .onde p {
+.dia10 .gridInfo .onde p {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
-  color: #4e4e4e;
+  color: #ffffff;
 }
 
-.informacoesFestival .gridInfo .quando {
+.dia10 .gridInfo .quando {
   max-width: 250px;
 }
 
-.informacoesFestival .gridInfo .quando img {
+.dia10 .gridInfo .quando img {
   margin-bottom: 20px;
 }
 
-.informacoesFestival .gridInfo .quando h6 {
+.dia10 .gridInfo .quando h6 {
   font-size: 30px;
-  color: #4e4e4e;
+  color: #fcfcfc;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 
-.informacoesFestival .gridInfo .quando p {
+.dia10 .gridInfo .quando p {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
-  color: #4e4e4e;
+  color: #fafafa;
 }
 
-.informacoesFestival .gridInfo .artistas {
+.dia10 .gridInfo .artistas {
   max-width: 250px;
 }
 
-.informacoesFestival .gridInfo .artistas h4 {
-  color: #4e4e4e;
+.dia10 .gridInfo .artistas h4 {
+  color: #ffffff;
   font-size: 50px;
   margin-bottom: 20px;
 }
 
-.informacoesFestival .gridInfo .artistas h6 {
+.dia10 .gridInfo .artistas h6 {
   font-size: 30px;
-  color: #4e4e4e;
+  color: #ffffff;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 
-.informacoesFestival .gridInfo .artistas p {
+.dia10 .gridInfo .artistas p {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
-  color: #4e4e4e;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
