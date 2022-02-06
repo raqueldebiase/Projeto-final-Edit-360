@@ -800,14 +800,12 @@ footer .footerGrid .listaFooter ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 50px;
 }
 
 footer .footerGrid .listaFooter ul a {
   text-decoration: none;
-  gap: 20px;
+  gap: 100px;
 }
 
 footer .footerGrid .listaFooter ul a li {
@@ -815,6 +813,7 @@ footer .footerGrid .listaFooter ul a li {
   color: #a1a1a1;
   font-size: 14px;
   font-weight: lighter;
+  display: inline;
 }
 
 footer p {
