@@ -760,143 +760,78 @@ article .dirEsq {
 }
 
 footer {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
   max-width: 100%;
   overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
+  background: black;
 }
 
 footer .footerGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  place-items: left;
-  max-width: 100%;
-  grid-gap: 64px;
-  padding: 60px;
-  margin: auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  place-items: center;
 }
 
-@media screen and (max-width: 400px) {
-  footer .footerGrid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
+footer .footerGrid .patrocinadores {
+  margin-top: 60px;
 }
 
-footer .footerGrid .redesSociais {
-  margin-right: 120px;
-}
-
-@media screen and (max-width: 400px) {
-  footer .footerGrid .redesSociais {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-footer .footerGrid .endereco {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 100px;
-}
-
-@media screen and (max-width: 400px) {
-  footer .footerGrid .endereco {
-    margin-left: 0;
-  }
-}
-
-footer .footerGrid .endereco img {
-  margin-right: 30px;
-}
-
-footer .footerGrid .endereco p {
-  font-size: 22.76px;
-  font-family: "Montserrat", sans-serif;
+footer .footerGrid .endPraia {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
   font-weight: lighter;
-  line-height: 24.5px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  color: #a1a1a1;
+  padding: 16px;
 }
 
-@media screen and (max-width: 400px) {
-  footer .footerGrid .politicas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+footer .footerGrid .sociaisFooter a {
+  padding: 18px;
 }
 
-footer .footerGrid .politicas ul a {
-  text-decoration: none;
+footer .footerGrid .listaFooter {
+  margin: 40px 0 40px 0;
+  max-width: 100%;
 }
 
-footer .footerGrid .politicas ul a li {
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  line-height: 44px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: #a1a1a1;
-}
-
-footer .footerGrid .menuFooter {
-  margin-left: 170px;
-}
-
-@media screen and (max-width: 400px) {
-  footer .footerGrid .menuFooter {
-    margin-left: 0;
-  }
-}
-
-footer .footerGrid .menuFooter ul a {
-  text-decoration: none;
-}
-
-footer .footerGrid .menuFooter ul a li {
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  line-height: 24px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: #a1a1a1;
-}
-
-footer .imgFooter {
+footer .footerGrid .listaFooter ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
+footer .footerGrid .listaFooter ul a {
+  text-decoration: none;
+  gap: 20px;
+}
+
+footer .footerGrid .listaFooter ul a li {
+  font-family: "Poppins", sans-serif;
+  color: #a1a1a1;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+footer p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*
+@media screen and (max-width: 400px){
+    display: grid;
+    grid-template-columns: 100%;
+}
+*/
 .informacoesFestival {
   margin-left: 180px;
   padding-bottom: 100px;
