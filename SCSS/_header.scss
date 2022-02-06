@@ -6,6 +6,13 @@ body{
     -moz-background-size: contain;
     background-size: contain;
     -o-background-size: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.bgDegrade{
+    background: rgb(102,53,103);
+    background: linear-gradient(164deg, rgba(102,53,103,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .menu {

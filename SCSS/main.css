@@ -62,6 +62,13 @@ body {
   background-size: contain;
   background-size: contain;
   -o-background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.bgDegrade {
+  background: #663567;
+  background: linear-gradient(164deg, #663567 0%, black 100%);
 }
 
 .menu {
