@@ -46,9 +46,15 @@
             border:1px solid #ffffff; 
             width: 108px;
             height: 111px;
+            display: grid;
+            place-items: center;
             
             p{
                 font-size: 30px;
+                margin: auto;
+            }
+            h6{
+                font-size: 24px;
             }
         }
         .todos {

@@ -47,6 +47,7 @@
                 display: none;
             }
             .sociaisHero {
+                
                 a{
                     img{
                         padding-bottom: 20px;
@@ -55,14 +56,13 @@
             }  
         }
         .followUs{
-
+            max-width: 100%;
             .rotate{
                 transform: rotate(-90deg);
                 font-family: "Poppins", sans-serif;
                 color: white;
                 font-size: 15px;
                 line-height: 20px;
-                height: 50px;
             }
         }
     }

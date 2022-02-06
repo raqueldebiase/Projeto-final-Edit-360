@@ -93,7 +93,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40px;
+  height: 50px;
   gap: 40px;
   margin-left: 20px;
 }
@@ -201,6 +201,10 @@ body {
   padding-bottom: 20px;
 }
 
+.bannerPrincipal .tituloEsociais .followUs {
+  max-width: 100%;
+}
+
 .bannerPrincipal .tituloEsociais .followUs .rotate {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -208,7 +212,6 @@ body {
   color: white;
   font-size: 15px;
   line-height: 20px;
-  height: 50px;
 }
 
 .botao {
@@ -316,10 +319,18 @@ body {
   border: 1px solid #ffffff;
   width: 108px;
   height: 111px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .lineUp .agendaLineUp a p {
   font-size: 30px;
+  margin: auto;
+}
+
+.lineUp .agendaLineUp a h6 {
+  font-size: 24px;
 }
 
 .lineUp .agendaLineUp .todos {
