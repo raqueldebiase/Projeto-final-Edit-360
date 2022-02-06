@@ -778,16 +778,20 @@ article .dirEsq {
 }
 
 .bannerColorido {
-  max-width: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .bannerColorido div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  place-items: center;
+}
+
+.bannerColorido div img {
+  width: 100%;
 }
 
 footer {

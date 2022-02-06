@@ -1,11 +1,12 @@
 .bannerColorido {
-    div{
-        
-    }
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
     div{
-        display: flex;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        place-items: center;
+        img{
+            width: 100%;
+        }
     }
 }
