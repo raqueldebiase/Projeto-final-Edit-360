@@ -481,6 +481,24 @@ input {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 400px) {
+  .calendario span:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .calendario {
+    gap: -5px;
+  }
+  .calendario span:nth-child(2) {
+    margin-top: 75px;
+  }
+  .calendario span:nth-child(3) {
+    margin-top: -75px;
+  }
+}
+
 .calendario .bannerDatas {
   max-width: 100%;
   display: -webkit-box;
@@ -488,8 +506,24 @@ input {
   display: flex;
 }
 
+@media screen and (max-width: 400px) {
+  .calendario .bannerDatas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+}
+
 .calendario .bannerDatas span a img {
   margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .calendario .bannerDatas span a img {
+    width: 100%;
+  }
 }
 
 .agenda {
