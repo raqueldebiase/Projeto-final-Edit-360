@@ -6,6 +6,7 @@
         flex-wrap: wrap;
         margin: auto;
         padding: 18px;
+        overflow: hidden;
     }
     h3{
         font-size: 54px;
@@ -36,9 +37,6 @@
         }
     }
     .cartazesSlick{
-        button{
-            display: none;
-        }
         @media screen and (min-width: 401px){
             display: none;
         }

@@ -27,10 +27,11 @@ function diminui(obj){
 /*slick banner valores*/
 
 $('.cartazesSlick').slick({
-  dots: true,
+
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 3,
-  touchThreshold: 1,
 });
+
+
 

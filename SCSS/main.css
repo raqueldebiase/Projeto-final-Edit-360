@@ -597,9 +597,19 @@ input {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    gap: 40px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bannerEspaco div {
+    margin: -10px;
+    width: 100%;
+  }
+  .bannerEspaco div a {
+    width: 100%;
   }
 }
 
@@ -617,6 +627,7 @@ input {
         flex-wrap: wrap;
     margin: auto;
     padding: 18px;
+    overflow: hidden;
   }
 }
 
@@ -659,10 +670,6 @@ input {
   .valores .cartazesValores {
     display: none;
   }
-}
-
-.valores .cartazesSlick button {
-  display: none;
 }
 
 @media screen and (min-width: 401px) {
