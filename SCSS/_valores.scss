@@ -1,10 +1,19 @@
 .valores {
     margin: 0 0 0 150px;
     overflow: hidden;
+    @media screen and (max-width: 400px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 18px;
+    }
     h3{
         font-size: 54px;
         font-family: "Poppins", sans-serif;
         color: rgb(255, 255, 255);
+        @media screen and (max-width: 400px){
+            font-size: 39px;
+        }
     }
     .h3Bold{
         font-weight: 600;
@@ -16,8 +25,11 @@
         font-size: 15px;
         line-height: 20px;
         max-width: 600px;
+        @media screen and (max-width: 400px){
+            font-size: 13px;
+        }
     }
-    div{
+    .cartazesValores{
         margin-left: -20px;
     }
 }

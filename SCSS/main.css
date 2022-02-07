@@ -606,10 +606,28 @@ input {
   overflow: hidden;
 }
 
+@media screen and (max-width: 400px) {
+  .valores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    padding: 18px;
+  }
+}
+
 .valores h3 {
   font-size: 54px;
   font-family: "Poppins", sans-serif;
   color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .valores h3 {
+    font-size: 39px;
+  }
 }
 
 .valores .h3Bold {
@@ -625,7 +643,13 @@ input {
   max-width: 600px;
 }
 
-.valores div {
+@media screen and (max-width: 400px) {
+  .valores p {
+    font-size: 13px;
+  }
+}
+
+.valores .cartazesValores {
   margin-left: -20px;
 }
 
