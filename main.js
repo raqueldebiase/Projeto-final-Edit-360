@@ -28,13 +28,9 @@ function diminui(obj){
 
 $('.cartazesSlick').slick({
   dots: true,
-  speed: 500,
-  intinite: true,
+  speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 3,
-  slidesPerRow: 2,
-  touchMove: true,
-  mobileFirst: true,
-  arrows: false,
+  touchThreshold: 1,
 });
 
