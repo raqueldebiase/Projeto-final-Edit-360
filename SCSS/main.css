@@ -1057,6 +1057,12 @@ footer .footerGrid .sociaisFooter a {
   padding: 18px;
 }
 
+@media screen and (max-width: 400px) {
+  footer .footerGrid .sociaisFooter a {
+    width: 50%;
+  }
+}
+
 footer .footerGrid .listaFooter {
   margin: 40px 0 40px 0;
   max-width: 100%;
@@ -1069,11 +1075,36 @@ footer .footerGrid .listaFooter ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 50px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .listaFooter ul {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    padding: 20px;
+    gap: 10px;
+    overflow: hidden;
+  }
 }
 
 footer .footerGrid .listaFooter ul a {
   text-decoration: none;
   gap: 100px;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .listaFooter ul a {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 footer .footerGrid .listaFooter ul a li {

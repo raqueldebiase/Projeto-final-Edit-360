@@ -19,6 +19,9 @@ footer{
         .sociaisFooter{
             a{
                 padding: 18px;
+                @media screen and (max-width: 400px){
+                    width: 50%; 
+                }
             }
         }
         .listaFooter{
@@ -28,9 +31,24 @@ footer{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 50px;
+                overflow: hidden;
+                @media screen and (max-width: 400px){
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr; 
+                    margin-top: 50px; 
+                    padding: 20px;
+                    gap: 10px;
+                    overflow: hidden;
+                }
                 a{
                     text-decoration: none;
                     gap: 100px;
+                    @media screen and (max-width: 400px){
+                        width: 100%;
+                        overflow: hidden;
+                        display: flex;
+                    }
                     li{
                         font-family: "Poppins", sans-serif;
                         color: #a1a1a1;
