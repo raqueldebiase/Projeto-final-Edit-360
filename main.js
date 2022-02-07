@@ -1,3 +1,18 @@
+/* Menu hamburguer onclick*/
+
+$('#clicarParaAbrirMenu').on('click', function(){
+  const menuHamburguer = $("#abaMenuHamburguer");
+  if (menuHamburguer.hasClass('menuDisplayNone')){
+    $('#abaMenuHamburguer').removeClass('menuDisplayNone');
+  } else {
+    $('#abaMenuHamburguer').addClass('menuDisplayNone');
+  }
+  event.preventDefault();
+});
+
+
+
+
 /* Mostrar DIV dia 10*/
 
 $(".diaClicavel").each(function(){

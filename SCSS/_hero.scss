@@ -7,9 +7,9 @@
         place-items: center;
         overflow: hidden;
         @media screen and (max-width: 400px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            place-items: center;
+            margin-bottom: 40px;
         }
 
         .vertical {

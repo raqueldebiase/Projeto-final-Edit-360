@@ -90,6 +90,7 @@ input {
     height: 100%;
     width: 100%;
     padding: 32px 0 0 24px;
+    grid-gap: 160px;
   }
 }
 
@@ -152,6 +153,20 @@ input {
   vertical-align: middle;
 }
 
+.menu .menuHamburguer {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .menu .menuHamburguer {
+    display: block;
+  }
+}
+
+.menu .menuHamburguer .menuDisplayNone {
+  display: none;
+}
+
 .bannerPrincipal .tituloEsociais {
   max-width: 100%;
   height: 100%;
@@ -165,14 +180,10 @@ input {
 
 @media screen and (max-width: 400px) {
   .bannerPrincipal .tituloEsociais {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
   }
 }
 
