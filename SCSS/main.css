@@ -166,6 +166,10 @@ input {
   background-color: #ED1C24;
 }
 
+.menu .menuHamburguer .menuDisplayNone div ul li {
+  color: white;
+}
+
 .bannerPrincipal .tituloEsociais {
   max-width: 100%;
   height: 100%;
