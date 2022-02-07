@@ -12,6 +12,8 @@
         }
     }
     @media screen and (max-width: 400px){
+        overflow: hidden;
+        margin-bottom: 90px;
         span:nth-child(2){
             margin-top: 75px;
         }
@@ -23,10 +25,12 @@
     .bannerDatas{
         max-width: 100%;
         display: flex;
+        overflow: hidden;
         @media screen and (max-width: 400px){
             display: grid;
             grid-template-columns: 50% 50%;
             width: 100%;
+            overflow: hidden;
         }
         span{
             a{

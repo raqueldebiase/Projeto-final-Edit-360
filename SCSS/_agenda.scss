@@ -5,17 +5,27 @@
     margin-bottom: 120px;
     @media screen and (max-width: 400px){
         max-width: 100%;
-        display: grid;
+        display: flex;
         overflow: hidden;
+        margin-bottom: 20px;
+    }
+    div{
+        @media screen and (max-width: 400px){
+            display: inline-flex;
+        }
+        a{
+            img{
+                @media screen and (max-width: 400px){
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    place-items: center;
+                    overflow: hidden;
+                }
+            }
+        }
     }
     img{
-        @media screen and (max-width: 400px){
-            width: 120%;
-            display: grid;
-            grid-template-columns: 1fr;
-            place-items: center;
-            overflow: hidden;
-        }
     }
     .aumentarDiv{
         margin: 0;

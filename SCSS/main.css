@@ -295,6 +295,7 @@ input {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     place-items: center;
+    overflow: hidden;
   }
 }
 
@@ -489,6 +490,8 @@ input {
 
 @media screen and (max-width: 400px) {
   .calendario {
+    overflow: hidden;
+    margin-bottom: 90px;
     gap: -5px;
   }
   .calendario span:nth-child(2) {
@@ -504,6 +507,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 400px) {
@@ -513,6 +517,7 @@ input {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -540,15 +545,25 @@ input {
 @media screen and (max-width: 400px) {
   .agenda {
     max-width: 100%;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     overflow: hidden;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .agenda img {
-    width: 120%;
+  .agenda div {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .agenda div a img {
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
