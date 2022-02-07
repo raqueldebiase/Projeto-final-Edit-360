@@ -4,7 +4,7 @@
     display: grid;
     place-items: center;
     overflow: hidden;
-    margin-bottom: 120px;
+    
     @media screen and (max-width: 400px){
         max-width: 100%;
         display: grid;
@@ -20,7 +20,7 @@
             color: #ffffff; 
             padding: 40px; 
             @media screen and (max-width: 400px){
-                font-size: 24px;
+                font-size: 42px;
 
             }
         }
@@ -33,32 +33,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-
-        }
-        a{
-            text-decoration: none;
-            font-family: "Poppins", sans-serif;
-            font-size: 60px;
-            color: #ffffff;
-            line-height: 50%;
-            font-weight:400;
-            border-radius: 26px;
-            border:1px solid #ffffff; 
-            width: 108px;
-            height: 111px;
-            display: grid;
-            place-items: center;
             
-            p{
-                font-size: 30px;
-                margin: auto;
+            .todosMenor {
+                display: none;
             }
-            h6{
-                font-size: 24px;
+            .todosMaior{
+                display: block;
             }
-        }
-        .todos {
-            font-size: 26px;
+
         }
     }
     .listaDosArtistas {
@@ -66,7 +48,10 @@
         width: 100%;
         @media screen and (max-width: 400px){
            max-width: 100%;
-
+           display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
         .artistas{
             display: grid;
@@ -74,6 +59,12 @@
             font-family: "Poppins", sans-serif;
             color: #ffffff;
             padding: 150px 0 15px 0;
+            @media screen and (max-width: 400px){
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
             h4{
                 font-size: 48px;
                 padding-bottom: 30px;
@@ -88,6 +79,35 @@
             small {
                 font-size: 67px;
             }
+
+        }
+        .artistasGrande{
+            display: grid;
+            place-items: center;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin-top: 150px;
+            h4{
+                font-size: 48px;
+                padding-bottom: 30px;
+                @media screen and (max-width: 400px){
+                    font-size: 32px;
+                }
+            }
+            h2{
+                font-size: 87px;
+                font-weight: 800;
+                @media screen and (max-width: 400px){
+                    font-size: 43px;
+                }
+            }
+            small {
+                font-size: 67px;
+                @media screen and (max-width: 400px){
+                    font-size: 40px;
+                }
+            }
+
         }
     }
 }
@@ -98,4 +118,9 @@
 
 .mostrarDia10{
     display: flex;
+}
+
+
+.todosMaior {
+    display: none;
 }

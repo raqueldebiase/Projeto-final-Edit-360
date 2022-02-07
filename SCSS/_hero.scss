@@ -7,12 +7,9 @@
         place-items: center;
         overflow: hidden;
         @media screen and (max-width: 400px){
-            display: grid;
-            grid-template-columns: 100%;
-            place-items: center;
-            max-width: 100%;
-            padding-left: 150px;
-            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .vertical {
@@ -33,9 +30,9 @@
                     color: #ffffff;
                     margin-top: 38px;
                     @media screen and (max-width: 400px){
-                        font-size: 20px;
+                        font-size: 48px;
+                        text-align: center;
                         line-height: 60px;
-                        margin-bottom: 40px;
                     }
                 }
             }

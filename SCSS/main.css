@@ -80,6 +80,25 @@ input {
   height: 100px;
 }
 
+@media screen and (max-width: 400px) {
+  .menu {
+    overflow: hidden;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    padding: 32px 0 0 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu .logoBuondi a img {
+    width: 75%;
+  }
+}
+
 .menu .menuPrincipal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,6 +107,12 @@ input {
       -ms-flex-align: stretch;
           align-items: stretch;
   overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+  .menu .menuPrincipal {
+    display: none;
+  }
 }
 
 .menu .menuPrincipal ul {
@@ -140,13 +165,14 @@ input {
 
 @media screen and (max-width: 400px) {
   .bannerPrincipal .tituloEsociais {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    place-items: center;
-    max-width: 100%;
-    padding-left: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -181,9 +207,9 @@ input {
 
 @media screen and (max-width: 400px) {
   .bannerPrincipal .tituloEsociais .vertical span h1 {
-    font-size: 20px;
+    font-size: 48px;
+    text-align: center;
     line-height: 60px;
-    margin-bottom: 40px;
   }
 }
 
@@ -259,7 +285,6 @@ input {
   display: grid;
   place-items: center;
   overflow: hidden;
-  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 400px) {
@@ -287,7 +312,7 @@ input {
 
 @media screen and (max-width: 400px) {
   .lineUp .tituloLineUp h4 {
-    font-size: 24px;
+    font-size: 42px;
   }
 }
 
@@ -310,35 +335,12 @@ input {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.lineUp .agendaLineUp a {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-  color: #ffffff;
-  line-height: 50%;
-  font-weight: 400;
-  border-radius: 26px;
-  border: 1px solid #ffffff;
-  width: 108px;
-  height: 111px;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-.lineUp .agendaLineUp a p {
-  font-size: 30px;
-  margin: auto;
-}
-
-.lineUp .agendaLineUp a h6 {
-  font-size: 24px;
-}
-
-.lineUp .agendaLineUp .todos {
-  font-size: 26px;
+  .lineUp .agendaLineUp .todosMenor {
+    display: none;
+  }
+  .lineUp .agendaLineUp .todosMaior {
+    display: block;
+  }
 }
 
 .lineUp .listaDosArtistas {
@@ -349,6 +351,17 @@ input {
 @media screen and (max-width: 400px) {
   .lineUp .listaDosArtistas {
     max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -359,6 +372,20 @@ input {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   padding: 150px 0 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas .artistas {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .lineUp .listaDosArtistas .artistas h4 {
@@ -381,6 +408,47 @@ input {
   font-size: 67px;
 }
 
+.lineUp .listaDosArtistas .artistasGrande {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 150px;
+}
+
+.lineUp .listaDosArtistas .artistasGrande h4 {
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas .artistasGrande h4 {
+    font-size: 32px;
+  }
+}
+
+.lineUp .listaDosArtistas .artistasGrande h2 {
+  font-size: 87px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas .artistasGrande h2 {
+    font-size: 43px;
+  }
+}
+
+.lineUp .listaDosArtistas .artistasGrande small {
+  font-size: 67px;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas .artistasGrande small {
+    font-size: 40px;
+  }
+}
+
 .dia10 {
   display: none;
 }
@@ -389,6 +457,10 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.todosMaior {
+  display: none;
 }
 
 .calendario {
@@ -482,6 +554,7 @@ input {
 
 .valores {
   margin: 0 0 0 150px;
+  overflow: hidden;
 }
 
 .valores h3 {
