@@ -1012,6 +1012,17 @@ article .dirEsq {
   place-items: center;
 }
 
+@media screen and (max-width: 400px) {
+  .bannerColorido div {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+}
+
 .bannerColorido div img {
   width: 100%;
 }
