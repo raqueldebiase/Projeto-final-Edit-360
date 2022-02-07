@@ -716,19 +716,21 @@ article .artGrid {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 10px;
   }
 }
 
 article .artGrid .quadrado1 {
   height: 346px;
-  width: 475px;
+  width: 380px;
+  background-image: url(/imagens/noticias/quadrado1.svg);
 }
 
 article .artGrid .quadrado2 {
-  background-color: #fdfdfd;
+  background-color: white;
   padding: 35px 60px 0 15px;
+  width: 305px;
 }
 
 article .artGrid .quadrado2 h5 {
@@ -753,18 +755,35 @@ article .artGrid .quadrado2 p {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado2 p {
+    margin-bottom: 40px;
+  }
+}
+
 article .artGrid .quadrado3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  max-width: 100%;
+  width: 300px;
+  height: 300px;
   background-color: white;
+  margin-bottom: 40px;
 }
 
 article .artGrid .quadrado3 .imagem {
   width: 190px;
   height: 171px;
+  background-image: url(/imagens/noticias/quadrado2.svg);
+  background-color: white;
+}
+
+article .artGrid .quadrado3 .imagem2 {
+  background-image: url(/imagens/noticias/quadrado3.svg);
+  width: 190px;
+  height: 171px;
+  background-color: white;
 }
 
 article .artGrid .quadrado3 .txt {
@@ -772,6 +791,12 @@ article .artGrid .quadrado3 .txt {
   height: 173px;
   margin-right: -14px;
   background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado3 .txt {
+    margin: 0;
+  }
 }
 
 article .artGrid .quadrado3 .txt h5 {
@@ -812,7 +837,7 @@ article .dirEsq {
 
 @media screen and (max-width: 400px) {
   article .dirEsq {
-    margin: 35px 0 0 12px;
+    margin: 35px 0 40px 12px;
   }
 }
 
