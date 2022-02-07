@@ -540,6 +540,7 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 400px) {
@@ -558,6 +559,7 @@ input {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    overflow: hidden;
   }
 }
 
@@ -651,6 +653,22 @@ input {
 
 .valores .cartazesValores {
   margin-left: -20px;
+}
+
+@media screen and (max-width: 400px) {
+  .valores .cartazesValores {
+    display: none;
+  }
+}
+
+.valores .cartazesSlick button {
+  display: none;
+}
+
+@media screen and (min-width: 401px) {
+  .valores .cartazesSlick {
+    display: none;
+  }
 }
 
 article {

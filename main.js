@@ -24,4 +24,13 @@ function diminui(obj){
     obj.width=obj.width/1.1;
 }
 
+/*slick banner valores*/
+
+$('.cartazesSlick').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 2,
+});
 

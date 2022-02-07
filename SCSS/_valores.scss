@@ -31,5 +31,16 @@
     }
     .cartazesValores{
         margin-left: -20px;
+        @media screen and (max-width: 400px){
+            display: none;
+        }
+    }
+    .cartazesSlick{
+        button{
+            display: none;
+        }
+        @media screen and (min-width: 401px){
+            display: none;
+        }
     }
 }
