@@ -381,6 +381,9 @@ input {
 }
 
 .lineUp .listaDosArtistas .artistas {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -421,47 +424,6 @@ input {
 
 .lineUp .listaDosArtistas .artistas small {
   font-size: 67px;
-}
-
-.lineUp .listaDosArtistas .artistasGrande {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  margin-top: 150px;
-}
-
-.lineUp .listaDosArtistas .artistasGrande h4 {
-  font-size: 48px;
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 400px) {
-  .lineUp .listaDosArtistas .artistasGrande h4 {
-    font-size: 32px;
-  }
-}
-
-.lineUp .listaDosArtistas .artistasGrande h2 {
-  font-size: 87px;
-  font-weight: 800;
-}
-
-@media screen and (max-width: 400px) {
-  .lineUp .listaDosArtistas .artistasGrande h2 {
-    font-size: 43px;
-  }
-}
-
-.lineUp .listaDosArtistas .artistasGrande small {
-  font-size: 67px;
-}
-
-@media screen and (max-width: 400px) {
-  .lineUp .listaDosArtistas .artistasGrande small {
-    font-size: 40px;
-  }
 }
 
 .dia10 {

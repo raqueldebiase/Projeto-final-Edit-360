@@ -49,7 +49,6 @@
     .listaDosArtistas {
         height: 100%;
         width: 100%;
-
         @media screen and (max-width: 400px){
            max-width: 100%;
            display: flex;
@@ -59,12 +58,14 @@
 
         }
         .artistas{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
             display: grid;
             place-items: center;
             font-family: "Poppins", sans-serif;
             color: #ffffff;
             padding: 150px 0 15px 0;
-
             @media screen and (max-width: 400px){
                 width: 100%;
                 flex-wrap: wrap;
@@ -87,35 +88,6 @@
             small {
                 font-size: 67px;
             }
-
-        }
-        .artistasGrande{
-            display: grid;
-            place-items: center;
-            color: white;
-            font-family: "Poppins", sans-serif;
-            margin-top: 150px;
-            h4{
-                font-size: 48px;
-                padding-bottom: 30px;
-                @media screen and (max-width: 400px){
-                    font-size: 32px;
-                }
-            }
-            h2{
-                font-size: 87px;
-                font-weight: 800;
-                @media screen and (max-width: 400px){
-                    font-size: 43px;
-                }
-            }
-            small {
-                font-size: 67px;
-                @media screen and (max-width: 400px){
-                    font-size: 40px;
-                }
-            }
-
         }
     }
 }
@@ -132,3 +104,4 @@
 .todosMaior {
     display: none;
 }
+

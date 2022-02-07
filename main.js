@@ -11,8 +11,6 @@ $('#clicarParaAbrirMenu').on('click', function(){
 });
 
 
-
-
 /* Mostrar DIV dia 10*/
 
 $(".diaClicavel").each(function(){
@@ -26,6 +24,25 @@ $(".diaClicavel").each(function(){
     event.preventDefault();
   });
 });
+
+/*
+
+let desporto = document.getElementById("desporto");
+let musica = document.getElementById("musica");
+let musica2 = document.getElementById("musica2");
+let humor = document.getElementById("humor");
+
+window.addEventListener('scroll', function(){
+  var value=this.window.scrollY;
+
+  desporto.style.top = value * 5.0 + 'px';
+  musica.style.top = value * 0.5 + 'px';
+  musica2.style.top = value * 0.5 + 'px';
+  humor.style.top = value * 0.5 + 'px';
+})
+*/
+
+
 
 
 /* Aumentar, diminuir span*/
