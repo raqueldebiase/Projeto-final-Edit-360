@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -156,6 +157,12 @@ input {
 @media screen and (max-width: 400px) {
   .menu .menuHamburguer {
     display: block;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .menu .menuHamburguer {
+    display: none;
   }
 }
 
@@ -382,6 +389,7 @@ input {
 
 .lineUp .listaDosArtistas .artistas {
   position: relative;
+  background: fixed;
   width: 100%;
   overflow: hidden;
   display: -ms-grid;
@@ -390,6 +398,11 @@ input {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   padding: 150px 0 15px 0;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 @media screen and (max-width: 400px) {
@@ -404,6 +417,12 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.lineUp .listaDosArtistas .artistas .artistaStart {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .lineUp .listaDosArtistas .artistas h4 {
@@ -570,23 +589,31 @@ input {
 
 @media screen and (max-width: 400px) {
   .bannerEspaco {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     margin-top: 100px;
+    width: 100%;
+    display: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .bannerEspaco div {
-    margin: -10px;
-    width: 100%;
-  }
-  .bannerEspaco div a {
-    width: 100%;
-  }
+.bannerEspaco .bannerPre {
+  width: 400px;
+  height: 250px;
+  background-image: url(/imagens/espaço/espacoCons.svg);
+  background-size: 100% auto;
+  width: 100%;
+  background-position: center;
+}
+
+.bannerEspaco .bannerCon {
+  width: 400px;
+  height: 250px;
+  background-image: url(/imagens/espaço/presspause.svg);
+  background-size: 100% auto;
+  width: 100%;
+  background-position: center;
 }
 
 .valores {

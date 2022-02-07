@@ -25,6 +25,35 @@ $(".diaClicavel").each(function(){
   });
 });
 
+/*SCROLL LINE UP*/
+
+var $target = $('.artistas'),
+    animationClass = 'artistaStart';
+
+function animeScroll(){
+  var documentTop = $(document).scrollTop();
+  
+  $$target.each(function() {
+    var itemTop = $(this).offset().top;
+    if(documentTop > itemTop){
+      $(this).addClass(animationClass);
+    } else {
+      $(this).removeClass(animationClass);
+    }
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 let desporto = document.getElementById("desporto");

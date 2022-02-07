@@ -6,18 +6,29 @@
     overflow: hidden;
     margin-top: 200px;
     @media screen and (max-width: 400px){
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
         margin-top: 100px; 
+        width: 100%;
+        display: initial;
+        flex-wrap: wrap;
+        overflow: hidden;
+
     }
-    div {
-        @media screen and (max-width: 400px){
-            margin: -10px; 
-            width: 100%;
-            a{
-                width: 100%;
-            }
-        }
+    .bannerPre{
+        width: 400px;
+        height: 250px;
+        background-image:url(/imagens/espaço/espacoCons.svg);
+        background-size: 100% auto;
+        width: 100%;
+        background-position: center;
+        
+    }
+    .bannerCon{
+        width: 400px;
+        height: 250px;
+        background-image: url(/imagens/espaço/presspause.svg);
+        background-size: 100% auto;
+        width: 100%;
+        background-position: center;
+        
     }
 }
