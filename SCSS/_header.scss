@@ -72,13 +72,14 @@
         }
     }
     .menuHamburguer{
-        display: none;
         @media screen and (max-width: 400px){
-            display: block;
-            
+            display: block; 
         }
         .menuDisplayNone {
             display: none;
+            width: 375px;
+            height: 697px;
+            background-color: #ED1C24;
         }
     }
 

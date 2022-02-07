@@ -153,10 +153,6 @@ input {
   vertical-align: middle;
 }
 
-.menu .menuHamburguer {
-  display: none;
-}
-
 @media screen and (max-width: 400px) {
   .menu .menuHamburguer {
     display: block;
@@ -165,6 +161,9 @@ input {
 
 .menu .menuHamburguer .menuDisplayNone {
   display: none;
+  width: 375px;
+  height: 697px;
+  background-color: #ED1C24;
 }
 
 .bannerPrincipal .tituloEsociais {
