@@ -4,7 +4,6 @@
     display: grid;
     place-items: center;
     overflow: hidden;
-    
     @media screen and (max-width: 400px){
         max-width: 100%;
         display: grid;
@@ -59,7 +58,6 @@
         }
         .artistas{
             position: relative;
-            background: fixed;
             width: 100%;
             overflow: hidden;
             display: grid;
@@ -75,10 +73,6 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-            }
-            .artistaStart {
-                opacity: 1;
-                transform: translate3d(0,0,0);
             }
 
             h4{
@@ -111,3 +105,7 @@
     display: none;
 }
 
+.artistaStart {
+    opacity: 1 !important;
+    transform: translate3d(0,0,0)!important;
+}

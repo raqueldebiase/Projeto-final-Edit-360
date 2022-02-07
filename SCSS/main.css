@@ -389,7 +389,6 @@ input {
 
 .lineUp .listaDosArtistas .artistas {
   position: relative;
-  background: fixed;
   width: 100%;
   overflow: hidden;
   display: -ms-grid;
@@ -417,12 +416,6 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.lineUp .listaDosArtistas .artistas .artistaStart {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 
 .lineUp .listaDosArtistas .artistas h4 {
@@ -457,6 +450,12 @@ input {
 
 .todosMaior {
   display: none;
+}
+
+.artistaStart {
+  opacity: 1 !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
 }
 
 .calendario {
@@ -858,7 +857,7 @@ article .dirEsq {
   .novidade h3 {
     font-size: 39px;
     padding: 0;
-    margin: 80px 0 40px 18px;
+    margin: 30px 0 40px 18px;
   }
 }
 
@@ -867,7 +866,7 @@ article .dirEsq {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  margin-bottom: 115px;
+  margin-bottom: 60px;
   height: 454px;
   width: 100%;
   position: relative;

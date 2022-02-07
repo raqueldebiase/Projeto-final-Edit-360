@@ -13,7 +13,7 @@ $('#clicarParaAbrirMenu').on('click', function(){
 
 /* Mostrar DIV dia 10*/
 
-$(".diaClicavel").each(function(){
+$("#diaClicavel").each(function(){
   $(this).on('click', function(){
     const dia10 = $("#idDia10");
     if (dia10.hasClass('dia10')){
@@ -27,21 +27,123 @@ $(".diaClicavel").each(function(){
 
 /*SCROLL LINE UP*/
 
-var $target = $('.artistas'),
+
+(function(){
+let $target = $('#desporto'),
     animationClass = 'artistaStart';
 
-function animeScroll(){
+  function animeScroll(){
   var documentTop = $(document).scrollTop();
+  console.log(documentTop);
   
-  $$target.each(function() {
+  $target.each(function() {
     var itemTop = $(this).offset().top;
-    if(documentTop > itemTop){
-      $(this).addClass(animationClass);
+    if(documentTop > itemTop-200){
+      console.log('adicionando')
+      $(this).addClass('artistaStart');
     } else {
-      $(this).removeClass(animationClass);
+      console.log('removendo')
+      $(this).removeClass('artistaStart');
     }
   })
 }
+
+animeScroll();
+
+$(document).scroll(function(){
+  animeScroll();
+})
+
+}());
+
+(function(){
+  let $target = $('#musica'),
+      animationClass = 'artistaStart';
+  
+    function animeScroll(){
+    var documentTop = $(document).scrollTop();
+    console.log(documentTop);
+    
+    $target.each(function() {
+      var itemTop = $(this).offset().top;
+      if(documentTop > itemTop-200){
+        console.log('adicionando')
+        $(this).addClass('artistaStart');
+      } else {
+        console.log('removendo')
+        $(this).removeClass('artistaStart');
+      }
+    })
+  }
+  
+  animeScroll();
+  
+  $(document).scroll(function(){
+    animeScroll();
+  })
+  
+  }());
+
+  (function(){
+    let $target = $('#musica2'),
+        animationClass = 'artistaStart';
+    
+      function animeScroll(){
+      var documentTop = $(document).scrollTop();
+      console.log(documentTop);
+      
+      $target.each(function() {
+        var itemTop = $(this).offset().top;
+        if(documentTop > itemTop-200){
+          console.log('adicionando')
+          $(this).addClass('artistaStart');
+        } else {
+          console.log('removendo')
+          $(this).removeClass('artistaStart');
+        }
+      })
+    }
+    
+    animeScroll();
+    
+    $(document).scroll(function(){
+      animeScroll();
+    })
+    
+    }());
+
+    (function(){
+      let $target = $('#humor'),
+          animationClass = 'artistaStart';
+      
+        function animeScroll(){
+        var documentTop = $(document).scrollTop();
+        console.log(documentTop);
+        
+        $target.each(function() {
+          var itemTop = $(this).offset().top;
+          if(documentTop > itemTop -200){
+            console.log('adicionando')
+            $(this).addClass('artistaStart');
+          } else {
+            console.log('removendo')
+            $(this).removeClass('artistaStart');
+          }
+        })
+      }
+      
+      animeScroll();
+      
+      $(document).scroll(function(){
+        animeScroll();
+      })
+      
+      }());
+
+
+
+
+
 
 
 
