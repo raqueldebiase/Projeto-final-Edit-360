@@ -785,6 +785,7 @@ article .artGrid .quadrado1 {
   width: 380px;
   overflow: hidden;
   background-image: url(/imagens/noticias/quadrado1.svg);
+  background-position: center;
 }
 
 article .artGrid .quadrado2 {
@@ -793,10 +794,24 @@ article .artGrid .quadrado2 {
   width: 305px;
 }
 
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado2 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}
+
 article .artGrid .quadrado2 h5 {
   color: red;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado2 h5 {
+    padding: 20px;
+  }
 }
 
 article .artGrid .quadrado2 h4 {
@@ -805,6 +820,13 @@ article .artGrid .quadrado2 h4 {
   line-height: 30px;
   margin-top: 30px;
   font-weight: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado2 h4 {
+    padding: 20px;
+    margin-top: 0;
+  }
 }
 
 article .artGrid .quadrado2 p {
@@ -817,7 +839,9 @@ article .artGrid .quadrado2 p {
 
 @media screen and (max-width: 400px) {
   article .artGrid .quadrado2 p {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding: 20px;
   }
 }
 
@@ -856,6 +880,7 @@ article .artGrid .quadrado3 .txt {
 @media screen and (max-width: 400px) {
   article .artGrid .quadrado3 .txt {
     margin: 0;
+    height: auto;
   }
 }
 
