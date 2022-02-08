@@ -191,11 +191,11 @@ function diminui(obj){
 
 $('.cartazesSlick').slick({
   speed: 1000,
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 3,
-  infinite: false,
-  arrow: false,
+  infinite: true,
   mobileFirst: true,
+
 });
 
 
