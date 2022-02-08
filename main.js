@@ -190,10 +190,12 @@ function diminui(obj){
 /*slick banner valores*/
 
 $('.cartazesSlick').slick({
-
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 3,
+  infinite: false,
+  arrow: false,
+  mobileFirst: true,
 });
 
 
