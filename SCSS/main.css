@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -692,7 +691,7 @@ input {
 .bannerEspaco .bannerCon {
   width: 100%;
   height: 450px;
-  background-image: url(/imagens/espaço/presspause.svg);
+  background-image: url(/imagens/espaco/presspause.svg);
   background-size: 100% auto;
 }
 
