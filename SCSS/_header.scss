@@ -14,6 +14,7 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    margin-bottom: -150px;
     @media screen and (max-width: 400px){
         background-size: cover;
         background-repeat: no-repeat;
@@ -22,16 +23,15 @@
     }
 }
 
-/*
+
 .bgDoMeio{
-    height: 100px;
+    height: 200px;
     background: rgb(102,53,103);
     background: linear-gradient(0deg, rgb(103, 53, 104) 1%, rgb(204, 46, 52) 94%);
-    margin-top: -15px;
-    
-    
+       
 }
-*/
+
+
 
 .menu {
     display: flex;
@@ -119,16 +119,21 @@
     color: white;
     font-family: "Poppins", sans-serif;
     line-height: 30px;
-
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    div{
-        div{
-            img{
-                padding: 20px;
-            }
+    margin: 0 40px 20px 0 ;
+    text-align: right;
+    a{
+        text-decoration: none;
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 20px;
         }
+
+    }
+    .pt{
+        margin-top: 20px;
     }
 }

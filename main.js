@@ -118,15 +118,12 @@ $(document).scroll(function(){
       
         function animeScroll(){
         var documentTop = $(document).scrollTop();
-        console.log(documentTop);
         
         $target.each(function() {
           var itemTop = $(this).offset().top;
           if(documentTop > itemTop -200){
-            console.log('adicionando')
             $(this).addClass('artistaStart');
           } else {
-            console.log('removendo')
             $(this).removeClass('artistaStart');
           }
         })
@@ -139,20 +136,6 @@ $(document).scroll(function(){
       })
       
       }());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -46,10 +46,11 @@
 }
 
 .slick-prev.slick-arrow{
-    display: none;
+    display: none !important;
 }
 
 .slick-next.slick-arrow{
-    display: none;
+    display: none !important;
+    
 }
 

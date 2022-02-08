@@ -6,7 +6,8 @@
     overflow: hidden;
     margin-bottom: 250px;
     span:nth-child(even){
-        
+        margin-top: 100px;
+        overflow: hidden;
         @media screen and (max-width: 400px){
             margin-top: 0;
         }
@@ -26,6 +27,7 @@
         max-width: 100%;
         display: flex;
         overflow: hidden;
+        padding-top: 80px;
         @media screen and (max-width: 400px){
             display: grid;
             grid-template-columns: 50% 50%;
@@ -34,8 +36,7 @@
         }
         span{
             a{
-                @media screen and (max-width: 400px){
-                    
+                @media screen and (max-width: 400px){  
                 }
 
                 img{
