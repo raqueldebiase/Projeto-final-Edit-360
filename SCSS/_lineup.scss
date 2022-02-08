@@ -34,19 +34,18 @@
             display: grid;
             grid-template-columns: 1fr;
             overflow: hidden;
-
-            
             .todosMenor {
                 display: none;
             }
             .todosMaior{
                 display: block;
                 margin: auto;
-
             }
 
         }
         .soOsDias {
+            display: flex;
+            gap: 40px;
             @media screen and (max-width: 400px){
                 display: flex;
                 flex-wrap: wrap;
@@ -66,7 +65,19 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-
+        
+        }
+        #desporto{
+            h4{
+                @media screen and (max-width: 400px){
+                    font-size: 32px;
+                }
+            }
+            small {
+                @media screen and (max-width: 400px){
+                    font-size: 40px;
+                }
+            }
         }
         .artistas{
             position: relative;
@@ -82,9 +93,8 @@
             transition: .8s;
             @media screen and (max-width: 400px){
                 width: 100%;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                display: grid;
+                place-items: center;
             }
 
             h4{
