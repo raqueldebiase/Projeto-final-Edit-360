@@ -191,7 +191,7 @@ function diminui(obj){
 
 $('.cartazesSlick').slick({
   speed: 1000,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 3,
   infinite: true,
   mobileFirst: true,
