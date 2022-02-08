@@ -58,7 +58,6 @@ input {
 }
 
 .bgDegrade {
-  padding-top: 50px;
   background: #663567;
   background: linear-gradient(164deg, #663567 0%, black 100%);
   overflow: hidden;
@@ -68,6 +67,8 @@ input {
   background-image: url(/imagens/BG/bgPrincipal.svg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
 @media screen and (max-width: 400px) {
@@ -79,13 +80,16 @@ input {
   }
 }
 
-.bgDoMeio {
-  height: 100px;
-  background: #663567;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #663567), color-stop(94%, #cc2e34));
-  background: linear-gradient(0deg, #663567 1%, #cc2e34 94%);
+/*
+.bgDoMeio{
+    height: 100px;
+    background: rgb(102,53,103);
+    background: linear-gradient(0deg, rgb(103, 53, 104) 1%, rgb(204, 46, 52) 94%);
+    margin-top: -15px;
+    
+    
 }
-
+*/
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,6 +348,7 @@ input {
   display: grid;
   place-items: center;
   overflow: hidden;
+  margin-bottom: 150px;
 }
 
 @media screen and (max-width: 400px) {
@@ -548,10 +553,6 @@ input {
           justify-content: center;
   overflow: hidden;
   margin-bottom: 250px;
-}
-
-.calendario span:nth-child(even) {
-  margin-top: 100px;
 }
 
 @media screen and (max-width: 400px) {
