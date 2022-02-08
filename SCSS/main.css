@@ -442,6 +442,18 @@ input {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas #musica2 h4 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas #musica2 small {
+    font-size: 40px;
+  }
+}
+
 .lineUp .listaDosArtistas .artistas {
   position: relative;
   width: 100%;
@@ -638,7 +650,7 @@ input {
 
 @media screen and (max-width: 400px) {
   .bannerEspaco {
-    margin-top: 100px;
+    margin-top: 300px;
     width: 100%;
     display: initial;
     -ms-flex-wrap: wrap;
@@ -666,7 +678,7 @@ input {
 }
 
 .valores {
-  margin: 0 0 0 150px;
+  margin: 0 0 0px 150px;
   overflow: hidden;
 }
 
@@ -680,6 +692,7 @@ input {
     margin: auto;
     padding: 18px;
     overflow: hidden;
+    margin-bottom: 100px;
   }
 }
 

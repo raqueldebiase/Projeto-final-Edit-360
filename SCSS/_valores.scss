@@ -1,5 +1,5 @@
 .valores {
-    margin: 0 0 0 150px;
+    margin: 0 0 0px 150px;
     overflow: hidden;
     @media screen and (max-width: 400px){
         display: flex;
@@ -7,6 +7,7 @@
         margin: auto;
         padding: 18px;
         overflow: hidden;
+        margin-bottom: 100px;
     }
     h3{
         font-size: 54px;

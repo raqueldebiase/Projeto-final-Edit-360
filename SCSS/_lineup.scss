@@ -79,6 +79,18 @@
                 }
             }
         }
+        #musica2{
+            h4{
+                @media screen and (max-width: 400px){
+                    font-size: 32px;
+                }
+            }
+            small {
+                @media screen and (max-width: 400px){
+                    font-size: 40px;
+                }
+            }
+        }
         .artistas{
             position: relative;
             width: 100%;
