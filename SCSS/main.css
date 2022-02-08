@@ -313,7 +313,7 @@ input {
 
 @media screen and (max-width: 400px) {
   .lineUp {
-    max-width: 100%;
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -351,6 +351,23 @@ input {
 
 @media screen and (max-width: 400px) {
   .lineUp .agendaLineUp {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .lineUp .agendaLineUp .todosMenor {
+    display: none;
+  }
+  .lineUp .agendaLineUp .todosMaior {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .agendaLineUp .soOsDias {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -359,12 +376,9 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .lineUp .agendaLineUp .todosMenor {
-    display: none;
-  }
-  .lineUp .agendaLineUp .todosMaior {
-    display: block;
+    gap: 40px;
+    width: 100%;
+    overflow: hidden;
   }
 }
 

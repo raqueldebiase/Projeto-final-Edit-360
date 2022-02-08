@@ -5,7 +5,7 @@
     place-items: center;
     overflow: hidden;
     @media screen and (max-width: 400px){
-        max-width: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
@@ -31,9 +31,9 @@
         text-align: center;
 
         @media screen and (max-width: 400px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            overflow: hidden;
 
             
             .todosMenor {
@@ -41,8 +41,20 @@
             }
             .todosMaior{
                 display: block;
+                margin: auto;
+
             }
 
+        }
+        .soOsDias {
+            @media screen and (max-width: 400px){
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+                width: 100%;
+                overflow: hidden;
+            }
         }
     }
     .listaDosArtistas {
