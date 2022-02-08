@@ -58,16 +58,32 @@ input {
 }
 
 .bgDegrade {
-  padding-top: 100px;
+  padding-top: 50px;
   background: #663567;
   background: linear-gradient(164deg, #663567 0%, black 100%);
   overflow: hidden;
 }
 
 .bgHeaderLineUp {
-  background-size: cover;
   background-image: url(/imagens/BG/bgPrincipal.svg);
   background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .bgHeaderLineUp {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+  }
+}
+
+.bgDoMeio {
+  height: 100px;
+  background: #663567;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #663567), color-stop(94%, #cc2e34));
+  background: linear-gradient(0deg, #663567 1%, #cc2e34 94%);
 }
 
 .menu {
@@ -661,16 +677,28 @@ input {
 
 .bannerEspaco .bannerPre {
   width: 100%;
-  height: 250px;
+  height: 450px;
   background-image: url(/imagens/espaço/espacoCons.svg);
   background-size: 100% auto;
 }
 
+@media screen and (max-width: 400px) {
+  .bannerEspaco .bannerPre {
+    height: 250px;
+  }
+}
+
 .bannerEspaco .bannerCon {
   width: 100%;
-  height: 250px;
+  height: 450px;
   background-image: url(/imagens/espaço/presspause.svg);
   background-size: 100% auto;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerEspaco .bannerCon {
+    height: 250px;
+  }
 }
 
 .valores {
