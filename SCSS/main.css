@@ -660,7 +660,7 @@ input {
 }
 
 .bannerEspaco .bannerPre {
-  width: 400px;
+  width: 100%;
   height: 250px;
   background-image: url(/imagens/espaço/espacoCons.svg);
   background-size: 100% auto;
@@ -669,7 +669,7 @@ input {
 }
 
 .bannerEspaco .bannerCon {
-  width: 400px;
+  width: 100%;
   height: 250px;
   background-image: url(/imagens/espaço/presspause.svg);
   background-size: 100% auto;
