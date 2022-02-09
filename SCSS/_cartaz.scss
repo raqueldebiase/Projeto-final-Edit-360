@@ -1,0 +1,109 @@
+.bodyCartaz{
+    background-image: url(/imagens/BG/bg_cartaz.png);
+    .bannerPrincipal{
+        .sociaisVertical{
+            display: flex;
+            justify-content: end;
+            margin-right: 40px;
+            @media screen and (max-width: 400px){
+                margin-right: 10px;
+            }
+            .sociaisHero{
+                display: grid;
+                grid-gap: 20px;
+            }
+        }
+    }
+    .menuHamburger{
+        @media screen and (max-width: 400px){
+           
+        }
+    }
+    .lineUp{
+        .listaDosArtistas{
+            font-family:"Poppins", sans-serif;
+            color: white;
+
+            #musica{
+                h4{
+                    font-size: 36px;
+                }
+                h3{
+                    font-size: 32px;
+                }
+            }
+            #musica2{
+                h3{
+                    font-size: 32px;
+                }
+            }
+            #humor{
+                h4{
+                    font-size: 24px;
+                }
+                h3{
+                    font-size: 24px;
+                }
+            }
+            div{
+                margin: 120px 0 120px 0;
+                display: grid;
+                place-items: center;
+                
+                h4{
+                    font-size: 48px;
+                    margin-bottom: 40px;
+                    @media screen and (max-width: 400px){
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    font-size: 48px;
+                    font-weight: bold;
+                    @media screen and (max-width: 400px){
+                        font-size: 24px;
+                    }
+                }
+                small{
+                    font-size: 72px;
+                    margin-top: 40px;
+                    @media screen and (max-width: 400px){
+                        font-size: 24px;
+                    }
+                }
+                h2{
+                    font-size: 72px;
+                    margin-top: 40px;
+                }
+                h3{
+                    font-size: 48px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .artistas{
+        h4{
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin-left: 40px;
+            margin-bottom: 80px;
+        }
+        .slideArtistas{
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                scroll-padding-left: 40px;
+                padding: 20px 0px 0px 40px;
+                display: grid;
+                width: 100%;
+                grid-auto-flow: column;
+                gap: 10px;
+                margin-bottom: 120px;
+                .pop-icon {
+                    scroll-snap-align: start;
+                }
+        }
+    }
+}

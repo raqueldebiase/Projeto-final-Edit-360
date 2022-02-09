@@ -45,7 +45,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
 	<!--Links-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="SCSS/main.css">
 </head>
 <!--GA-->
@@ -67,7 +66,7 @@
 	ga('send', 'pageview');
 </script>
 
-<body>
+<body class="bodyCartaz">
 	<!--NAV-->
 	<section class="bgHeaderLineUp">
 		<nav class="menu">
@@ -106,8 +105,9 @@
 		</nav>
 
 	<!--HERO-->
-		<section class="bannerPrincipal">
-			<div class="tituloEsociais">
+	
+	<section class="bannerPrincipal">
+		<div class="sociaisVertical">
 				<div class="horizontal">
 					<span class="sociaisHero">
 						<a href="www.facebook.com"><img src="/imagens/icons/sociaisVertical/facebook.png" alt=""></a>
@@ -119,31 +119,47 @@
 						<img src="/imagens/icons/sociaisVertical/follow us.png" class="rotate" alt="">
 					</span>
 				</div>
-			</div>
-		</section>
-		
-
+		</div>
+	</section>
+	<div>
+		<a href="#" class="botaoScroll"><img src="/imagens/icons/scrollHero.png" alt=""></a>
+	</div>
 	<!--LINEUP-->	
-		<section class="lineupCartaz">		
+
+	<section class="lineUp">
+		<section class="lineupCartaz">
+					
 			</div>
 			<div class="listaDosArtistas">
 				<div class="artistas" id="desporto">
 					<h4>10 JUN - DESPORTO</h4>
-					<h2>PLUTÔNIO</h2>
+					<p>SURF, YOGA, VOLEY DE PRAIA</p>
+					<P>BODYBOARD, WINDSURF,</P>
+					<P>FUTEBOL DE PRAIA</P>
+					<P>CONCURSO DE RAQUETES</P>
 					<small>FREDERICO MORAIS</small>
+					<h2>PLUTÔNIO</h2>
 				</div>
 				<div class="artistas" id="musica">
 					<h4>11 JUN - MUSICA</h4>
+					<h3>D.A.M.A</h3>
+					<h3>CAROLINA DESLANDES</h3>
 					<h2>PAPILLON</h2>
 					<small>CARLÃO</small>
 				</div>
 				<div class="artistas" id="musica2">
 					<h4>12 JUN - MUSICA</h4>
+					<h3>BARBARA TINOCO</h3>
+					<H3>CAPICUA</H3>
+					<H3>DIOGO PIÇARRA</H3>
 					<h2>WET BED GANG</h2>
 					<small>DILLAZ</small>
 				</div>
 				<div class="artistas" id="humor">
 					<h4>13 JUN - HUMOR</h4>
+					<h3>FERNANDO ROCHA, BRUNO</h3>
+					<h3>NOGUEIRA, RUI SINEL DE CORDES</h3>
+					<h3>PIPOCA MAIS DOCE</h3>
 					<h2>PEDRO TEIXEIRA</h2>
 					<H2>DA MOTA</H2>
 					<small>PIRUKA</small>
@@ -152,43 +168,27 @@
 		</section>
 	</section>
 
-	<!--ESPACO/BANNER-->
+	<!--ARTISTAS-->
+	<section class="artistas">
+		<h4>ARTISTAS</h4>
+		<div class="slideArtistas">
+			<img src="/imagens/artistasCartaz/1.png" alt="">
+			<img src="/imagens/artistasCartaz/2.png" alt="">
+			<img src="/imagens/artistasCartaz/3.png" alt="">
+			<img src="/imagens/artistasCartaz/4.png" alt="">
+			<img src="/imagens/artistasCartaz/5.png" alt="">
+			<img src="/imagens/artistasCartaz/6.png" alt="">
+		</div>
+	</section>
 
-	<!--NOVIDADES-->
-		<section class="novidade">
-			<h3>Queres saber todas as <br>novidades em primeira mão?</h3>
-			<div class="bannerDuploNovidades">
-				<div class="bannerIphone">
-					<small>instala a<br> nossa app</small>
-					<p>sabe tudo<br>ao segundo</p>
-					<div class="store">
-						<a href="#"><img src="/imagens/novidades/Group 94.svg" alt=""></a>
-						<a href="#"><img src="/imagens/novidades/Group 95.svg" alt=""></a>
-					</div>
-				</div>
-				<span class="imgIphone">
-					<img src="/imagens/novidades/iPhone-13.svg" class="iphone" alt="">
-				</span>
-				<div class="bannerNewsletter">
-					<h6>subscreve a pausa news</h6>
-					<form action="">
-						<div>
-							<input type="text" class="paraEmail" placeholder="Escreva aqui o teu e-mail">
-						</div>
-						<div class="inputCondicoes">
-							<input type="radio" id="condicoes" class="buttonAceito">
-							<label for="condicoes"><small>aceito os termos e condições</small></label>
-						</div>	
-					</form>
-					<div class="enviar">
-						<a href="#" class="botaoEnviar">Subscrever</a>
-					</div>
-				</div>
-			</div>
-		</section>
+	<!--SPOTIFY-->
+
+	<section class="novidade"></section>
+
+
 
 	<!--BANNER COLORIDO-->
-		<section class="bannerColorido">
+		<section class="bannerColorido2">
 			<div>
 				<img src="/imagens/bannerColorido/Group 3234.svg" alt=""></img>
 				<img src="/imagens/bannerColorido/Group 3235.svg" alt=""></img>
@@ -232,7 +232,6 @@
 		</footer>
 	</section>
 <script src="jQuery/jquery-3.6.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="main.js"></script>
 </body>
 

@@ -58,11 +58,19 @@ input {
 
 body {
   background-image: url(/imagens/BG/bg.png);
-  background-repeat: no-repeat;
-  background-position: initial;
-  background-position-x: center;
+  background-size: cover;
+  background-position: center center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-size: cover;
+    background-position: center center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .menu {
@@ -92,7 +100,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .menu .logoBuondi a img {
-    width: 75%;
+    width: 150%;
   }
 }
 
@@ -981,299 +989,37 @@ article .dirEsq {
 }
 
 .novidade {
-  overflow: hidden;
+  background-image: url(/imagens/novidades/newseiphone.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 400px) {
   .novidade {
-    overflow: hidden;
-    width: 100%;
+    display: none;
   }
 }
 
-.novidade h3 {
-  font-size: 54px;
-  font-family: "Poppins", sans-serif;
-  padding: 75px 0 0 150px;
-  line-height: 60px;
-  margin-bottom: 130px;
-  color: white;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade h3 {
-    font-size: 46px;
-    padding: 20px;
-    overflow: hidden;
-    margin-bottom: 40px;
-  }
-}
-
-.novidade .bannerDuploNovidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 80px;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerIphone {
-  background-image: url(/imagens/espaco/iphone.png);
+.novidadeMobile {
+  background-image: url(/imagens/novidades/mobile_newsiphone.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: center;
   width: 100%;
-  height: 400px;
-  padding: 80px 0 50px 120px;
-  /*
-            span{
-                position: relative;
-                z-index: 1;
-                .iphone{
-                    position: absolute;
-                    left: 250px;
-                    top: -500px;
-                    z-index: -1;
-                }
-            */
+  height: 800px;
+  margin-bottom: 120px;
 }
 
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerIphone {
-    padding: 0px 0px 0px 20px;
-    background-size: 100% auto;
+@media screen and (min-width: 401px) {
+  .novidadeMobile {
+    display: none;
   }
-}
-
-.novidade .bannerDuploNovidades .bannerIphone .txtIphone {
-  padding-top: 40px;
-}
-
-.novidade .bannerDuploNovidades .bannerIphone .txtIphone small {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  margin-top: 80px;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerIphone .txtIphone small {
-    font-size: 24px;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerIphone .txtIphone p {
-  font-size: 20px;
-  font-weight: regular;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerIphone .txtIphone p {
-    font-size: 30px;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerIphone .txtIphone .store {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  margin-top: 40px;
-  margin-left: -18px;
-  width: 100px;
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter {
-  background-color: #A92227;
-  padding: 40px;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter {
-    padding: 20px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    place-items: center;
-    overflow: hidden;
-    height: 300px;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter h6 {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  margin-bottom: 40px;
-  line-height: 45px;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter h6 {
-    margin-bottom: 10px;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter form {
-    overflow: hidden;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter form div {
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter form div .paraEmail {
-  width: 240px;
-  height: 47px;
-  border-radius: 41px;
-  border-style: none;
-  padding-left: 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter form div .paraEmail {
-    width: 300px;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter form .inputCondicoes {
-  padding: 20px;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter form .inputCondicoes {
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-left: 0px;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter form .inputCondicoes label {
-  font-size: 16px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  padding: 8px;
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter .enviar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 65px;
-  margin-right: -380px;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerNewsletter .enviar {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter .enviar .botaoEnviar {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 160px;
-  height: 47px;
-  border-radius: 41px;
-  border-style: none;
-  background-color: black;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-  margin: auto;
-}
-
-.novidade .bannerDuploNovidades .bannerNewsletter .enviar .botaoEnviar:hover {
-  background-color: rgba(0, 0, 0, 0.267);
 }
 
 .bannerColorido {
   width: 100%;
   overflow: hidden;
-  background-color: black;
 }
 
 .bannerColorido div {
@@ -1487,5 +1233,133 @@ footer p {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   color: #ffffff;
+}
+
+.bodyCartaz {
+  background-image: url(/imagens/BG/bg_cartaz.png);
+}
+
+.bodyCartaz .bannerPrincipal .sociaisVertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .bannerPrincipal .sociaisVertical {
+    margin-right: 10px;
+  }
+}
+
+.bodyCartaz .bannerPrincipal .sociaisVertical .sociaisHero {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica h4 {
+  font-size: 36px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica h3 {
+  font-size: 32px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
+  font-size: 32px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #humor h4 {
+  font-size: 24px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #humor h3 {
+  font-size: 24px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas div {
+  margin: 120px 0 120px 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas div h4 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas div h4 {
+    font-size: 24px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas div p {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas div p {
+    font-size: 24px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas div small {
+  font-size: 72px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas div small {
+    font-size: 24px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas div h2 {
+  font-size: 72px;
+  margin-top: 40px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas div h3 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.bodyCartaz .artistas h4 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-left: 40px;
+  margin-bottom: 80px;
+}
+
+.bodyCartaz .artistas .slideArtistas {
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-padding-left: 40px;
+  padding: 20px 0px 0px 40px;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  gap: 10px;
+  margin-bottom: 120px;
+}
+
+.bodyCartaz .artistas .slideArtistas .pop-icon {
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=main.css.map */
