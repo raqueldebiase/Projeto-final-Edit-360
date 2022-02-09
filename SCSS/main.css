@@ -56,33 +56,13 @@ input {
   padding: 0;
 }
 
-.bgDegrade {
-  background: #663567;
-  background: linear-gradient(164deg, #663567 0%, black 100%);
-  overflow: hidden;
-}
-
-.bgHeaderLineUp {
-  background-image: url(/imagens/BG/bgPrincipal.svg);
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  margin-bottom: -150px;
-}
-
-@media screen and (max-width: 400px) {
-  .bgHeaderLineUp {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-  }
-}
-
-.bgDoMeio {
-  height: 200px;
-  background: #663567;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #673568), color-stop(94%, #cc2e34));
-  background: linear-gradient(0deg, #673568 1%, #cc2e34 94%);
+body {
+  background-image: url(/imagens/BG/bg.png);
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-position-x: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -171,10 +151,21 @@ input {
   vertical-align: middle;
 }
 
+.menu .menuHamburguer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 400px) {
   .menu .menuHamburguer {
     display: block;
     overflow: hidden;
+    width: 150px;
   }
 }
 
@@ -191,13 +182,23 @@ input {
   overflow: hidden;
 }
 
+.menu .menuHamburguer .menuDisplayNone .pt {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .listaDisplayNone {
   overflow: hidden;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   font-family: "Poppins", sans-serif;
   line-height: 30px;
-  margin: 0 40px 20px 0;
+  margin: 0 40px 40px -100px;
   text-align: right;
 }
 
@@ -214,10 +215,6 @@ input {
   text-decoration: none;
   color: white;
   margin-bottom: 20px;
-}
-
-.listaDisplayNone .pt {
-  margin-top: 20px;
 }
 
 .bannerPrincipal .tituloEsociais {
@@ -692,7 +689,7 @@ input {
 
 .bannerEspaco .bannerCon {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-image: url(/imagens/espaco/presspause.svg);
   background-size: 100% auto;
 }
@@ -785,7 +782,7 @@ article div h3 {
 
 @media screen and (max-width: 400px) {
   article div h3 {
-    margin-left: 15px;
+    margin: 80px 0 80px 0;
     font-size: 39px;
   }
 }
@@ -820,6 +817,12 @@ article .artGrid .quadrado1 {
   background-position: center;
 }
 
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado1 {
+    width: 360px;
+  }
+}
+
 article .artGrid .quadrado2 {
   background-color: white;
   padding: 35px 60px 0 15px;
@@ -828,7 +831,7 @@ article .artGrid .quadrado2 {
 
 @media screen and (max-width: 400px) {
   article .artGrid .quadrado2 {
-    width: 100%;
+    width: 360px;
     height: 100%;
     padding: 0;
   }
@@ -888,6 +891,12 @@ article .artGrid .quadrado3 {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado3 {
+    width: 360px;
+  }
+}
+
 article .artGrid .quadrado3 .imagem {
   width: 190px;
   height: 171px;
@@ -895,11 +904,23 @@ article .artGrid .quadrado3 .imagem {
   background-color: white;
 }
 
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado3 .imagem {
+    width: 180px;
+  }
+}
+
 article .artGrid .quadrado3 .imagem2 {
   background-image: url(/imagens/noticias/quadrado3.svg);
   width: 190px;
   height: 171px;
   background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  article .artGrid .quadrado3 .imagem2 {
+    width: 180px;
+  }
 }
 
 article .artGrid .quadrado3 .txt {
@@ -913,6 +934,7 @@ article .artGrid .quadrado3 .txt {
   article .artGrid .quadrado3 .txt {
     margin: 0;
     height: auto;
+    width: 180px;
   }
 }
 
@@ -989,13 +1011,18 @@ article .dirEsq {
 }
 
 .novidade .bannerDuploNovidades {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  margin-bottom: 60px;
-  height: 454px;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -1013,8 +1040,12 @@ article .dirEsq {
 }
 
 .novidade .bannerDuploNovidades .bannerIphone {
-  background-color: #ED1C24;
-  padding: 48px 0 0 120px;
+  background-image: url(/imagens/espaco/iphone.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 400px;
+  padding: 80px 0 50px 120px;
   /*
             span{
                 position: relative;
@@ -1030,24 +1061,30 @@ article .dirEsq {
 
 @media screen and (max-width: 400px) {
   .novidade .bannerDuploNovidades .bannerIphone {
-    padding: 60px 20px 20px 20px;
+    padding: 0px 0px 0px 20px;
+    background-size: 100% auto;
   }
 }
 
-.novidade .bannerDuploNovidades .bannerIphone small {
-  font-size: 24px;
+.novidade .bannerDuploNovidades .bannerIphone .txtIphone {
+  padding-top: 40px;
+}
+
+.novidade .bannerDuploNovidades .bannerIphone .txtIphone small {
+  font-size: 16px;
   font-weight: bold;
   color: white;
   font-family: "Poppins", sans-serif;
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerIphone small {
-    font-size: 32px;
+  .novidade .bannerDuploNovidades .bannerIphone .txtIphone small {
+    font-size: 24px;
   }
 }
 
-.novidade .bannerDuploNovidades .bannerIphone p {
+.novidade .bannerDuploNovidades .bannerIphone .txtIphone p {
   font-size: 20px;
   font-weight: regular;
   color: white;
@@ -1056,47 +1093,24 @@ article .dirEsq {
 }
 
 @media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerIphone p {
+  .novidade .bannerDuploNovidades .bannerIphone .txtIphone p {
     font-size: 30px;
   }
 }
 
-.novidade .bannerDuploNovidades .bannerIphone .store {
+.novidade .bannerDuploNovidades .bannerIphone .txtIphone .store {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   margin-top: 40px;
   margin-left: -18px;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .bannerIphone .store {
-    margin-top: 10px;
-  }
-}
-
-.novidade .bannerDuploNovidades .imgIphone {
-  position: absolute;
-  left: 400px;
-  top: -100px;
-}
-
-@media screen and (max-width: 400px) {
-  .novidade .bannerDuploNovidades .imgIphone {
-    font-size: 30px;
-    left: 200px;
-  }
-}
-
-.novidade .bannerDuploNovidades .imgIphone .iphone {
-  position: relative;
-  z-index: 1;
+  width: 100px;
 }
 
 .novidade .bannerDuploNovidades .bannerNewsletter {
   background-color: #A92227;
-  padding: 48px 0 0 120px;
+  padding: 40px;
   overflow: hidden;
 }
 
@@ -1166,7 +1180,7 @@ article .dirEsq {
 }
 
 .novidade .bannerDuploNovidades .bannerNewsletter form div .paraEmail {
-  width: 540px;
+  width: 240px;
   height: 47px;
   border-radius: 41px;
   border-style: none;
@@ -1259,6 +1273,7 @@ article .dirEsq {
 .bannerColorido {
   width: 100%;
   overflow: hidden;
+  background-color: black;
 }
 
 .bannerColorido div {

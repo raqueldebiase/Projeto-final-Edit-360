@@ -1,34 +1,42 @@
-.bgDegrade{
+body { 
+    background-image: url(/imagens/BG/bg.png);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-position-x: center ;
+    object-fit: cover;
+}
+
+
+
+// .bgDegrade{
     
-    background: rgb(102,53,103);
-    background: linear-gradient(164deg, rgba(102,53,103,1) 0%, rgba(0,0,0,1) 100%);
-    overflow: hidden;
-    @media screen and (max-width: 400px){
+//     background: rgb(102,53,103);
+//     background: linear-gradient(164deg, rgba(102,53,103,1) 0%, rgba(0,0,0,1) 100%);
+//     overflow: hidden;
+//     @media screen and (max-width: 400px){
         
-    }
-}
+//     }
+// }
 
-.bgHeaderLineUp{
-    background-image: url(/imagens/BG/bgPrincipal.svg);
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    margin-bottom: -150px;
-    @media screen and (max-width: 400px){
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        overflow: hidden;
-    }
-}
+// .bgHeaderLineUp{
+//     background-image: url(/imagens/BG/bgPrincipal.svg);
+//     background-size: cover;
+//     background-attachment: fixed;
+//     position: relative;
+//     margin-bottom: -150px;
+//     @media screen and (max-width: 400px){
+//         background-repeat: no-repeat;
+//         background-attachment: fixed;
+//         overflow: hidden;
+//     }
+// }
 
 
-.bgDoMeio{
-    height: 200px;
-    background: rgb(102,53,103);
-    background: linear-gradient(0deg, rgb(103, 53, 104) 1%, rgb(204, 46, 52) 94%);
-    
-       
-}
+// .bgDoMeio{
+//     height: 200px;
+//     background: rgb(102,53,103);
+//     background: linear-gradient(0deg, rgb(103, 53, 104) 1%, rgb(204, 46, 52) 94%);     
+// }
 
 
 
@@ -95,9 +103,15 @@
         }
     }
     .menuHamburguer{
+        a{
+            display: flex;
+            justify-content: right;
+            margin-right: 20px;
+        }
         @media screen and (max-width: 400px){
             display: block; 
             overflow: hidden;
+            width: 150px;
         }
         @media screen and (min-width: 401px){
             display: none; 
@@ -107,6 +121,11 @@
             width: 375px;
             height: 697px;
             overflow: hidden;
+            .pt{
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-end;
+            }
         }
     }
 
@@ -114,11 +133,11 @@
 
 .listaDisplayNone{
     overflow: hidden;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-family: "Poppins", sans-serif;
     line-height: 30px;
-    margin: 0 40px 20px 0 ;
+    margin: 0 40px 40px -100px ;
     text-align: right;
     a{
         text-decoration: none;
@@ -132,7 +151,5 @@
         }
 
     }
-    .pt{
-        margin-top: 20px;
-    }
+
 }
