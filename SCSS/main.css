@@ -1278,11 +1278,6 @@ footer p {
   place-items: center;
 }
 
-.bodyCartaz .lineUp .listaDosArtistas #desporto {
-  font-size: 36px;
-  margin-left: -10px;
-}
-
 .bodyCartaz .lineUp .listaDosArtistas #desporto small {
   font-size: 32px;
 }
@@ -1293,7 +1288,6 @@ footer p {
 
 .bodyCartaz .lineUp .listaDosArtistas #musica h4 {
   font-size: 36px;
-  margin-left: -10px;
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #musica h3 {
@@ -1400,6 +1394,14 @@ footer p {
   margin-bottom: 120px;
   padding-left: 200px;
   padding-right: 200px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .spotify {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+  }
 }
 
 .bodyCartaz .novidadeMobile {
