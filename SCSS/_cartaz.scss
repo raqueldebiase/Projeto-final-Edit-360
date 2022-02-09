@@ -1,12 +1,7 @@
 .bodyCartaz{
     background-image: url(/imagens/BG/bg_cartaz.png);
     .bgHeaderLineUp{
-        .menu{
-
-            .logoBuoundi {
-                width: 150%;
-            }
-        }
+        
         .menuHamburguer{
             @media screen and (max-width: 400px){
                 margin-right: 10px;
@@ -135,6 +130,18 @@
                 }
         }
     }
+
+    .spotify {
+        margin-bottom: 120px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+
+
+
+
+
     .novidadeMobile{
         margin-bottom: 20px;
     }

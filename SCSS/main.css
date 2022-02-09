@@ -100,7 +100,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .menu .logoBuondi a img {
-    width: 150%;
+    width: 100%;
   }
 }
 
@@ -173,7 +173,6 @@ body {
   .menu .menuHamburguer {
     display: block;
     overflow: hidden;
-    width: 150px;
   }
 }
 
@@ -1239,10 +1238,6 @@ footer p {
   background-image: url(/imagens/BG/bg_cartaz.png);
 }
 
-.bodyCartaz .bgHeaderLineUp .menu .logoBuoundi {
-  width: 150%;
-}
-
 @media screen and (max-width: 400px) {
   .bodyCartaz .bgHeaderLineUp .menuHamburguer {
     margin-right: 10px;
@@ -1399,6 +1394,12 @@ footer p {
 
 .bodyCartaz .artistas .slideArtistas .pop-icon {
   scroll-snap-align: start;
+}
+
+.bodyCartaz .spotify {
+  margin-bottom: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .bodyCartaz .novidadeMobile {
