@@ -172,11 +172,7 @@ function diminui(obj){
 
 /*slick banner valores*/
 
-$('.cartazesSlick').slick({
-  speed: 100,
-  slidesToShow: 1,
-  slidesToScroll: 3,
-});
+
 
 
 

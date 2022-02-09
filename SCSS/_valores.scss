@@ -32,25 +32,30 @@
         }
     }
     .cartazesValores{
-        margin-left: -20px;
+        
         @media screen and (max-width: 400px){
-            display: none;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scroll-padding-left: 40px;
+            padding: 20px 0px 0px 40px;
+            display: grid;
+            width: 100%;
+            grid-auto-flow: column;
+            gap: 10px;
+            .pop-icon {
+                scroll-snap-align: start;
+            }
         }
+
     }
-    .cartazesSlick{
-        @media screen and (min-width: 401px){
-            display: none;
-        }
-    }
-
+    // .cartazesValores{
+    //     margin-left: -20px;
+    //     overflow: hidden;
+    //     @media screen and (max-width: 400px){
+            
+    //     }
+    // }
 }
 
-.slick-prev.slick-arrow{
-    display: none !important;
-}
 
-.slick-next.slick-arrow{
-    display: none !important;
-    
-}
 
