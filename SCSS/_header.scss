@@ -16,11 +16,10 @@
     position: relative;
     margin-bottom: -150px;
     @media screen and (max-width: 400px){
-        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        overflow: auto;
+        overflow: hidden;
     }
 }
 
