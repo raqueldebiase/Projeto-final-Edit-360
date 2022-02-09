@@ -23,10 +23,18 @@
         .listaDosArtistas{
             font-family:"Poppins", sans-serif;
             color: white;
-
+            .artistas{
+                display: grid;
+                place-items: center;
+            }
+            #desporto{
+                font-size: 36px;
+                margin-left: -10px;
+            }
             #musica{
                 h4{
                     font-size: 36px;
+                    margin-left: -10px;
                 }
                 h3{
                     font-size: 32px;
@@ -36,6 +44,9 @@
                 h3{
                     font-size: 32px;
                 }
+                h2{
+                    font-size: 40px;
+                }
             }
             #humor{
                 h4{
@@ -43,6 +54,9 @@
                 }
                 h3{
                     font-size: 24px;
+                }
+                h2{
+                    font-size: 40px;
                 }
             }
             div{
@@ -104,6 +118,14 @@
                 .pop-icon {
                     scroll-snap-align: start;
                 }
+        }
+    }
+    .novidadeMobile{
+        margin-bottom: 20px;
+    }
+    .bannerColorido {
+        @media screen and (max-width: 400px){
+            margin-top: 10px;
         }
     }
 }
