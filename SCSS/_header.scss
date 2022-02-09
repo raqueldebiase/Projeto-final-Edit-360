@@ -145,10 +145,12 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     line-height: 30px;
-    margin: 0 40px 40px -100px ;
+    margin: 0 20px 40px -100px ;
     text-align: right;
     a{
         text-decoration: none;
+        color: white;
+        text-align: right;
         
         ul{
             display: flex;
@@ -156,6 +158,8 @@ body {
             text-decoration: none;
             color: white;
             margin-bottom: 20px;
+            margin-right: 20px;
+
         }
 
     }

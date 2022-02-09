@@ -205,12 +205,14 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   line-height: 30px;
-  margin: 0 40px 40px -100px;
+  margin: 0 20px 40px -100px;
   text-align: right;
 }
 
 .listaDisplayNone a {
   text-decoration: none;
+  color: white;
+  text-align: right;
 }
 
 .listaDisplayNone a ul {
@@ -222,6 +224,7 @@ body {
   text-decoration: none;
   color: white;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .bannerPrincipal .tituloEsociais {
@@ -458,6 +461,22 @@ body {
 
 @media screen and (max-width: 400px) {
   .lineUp .listaDosArtistas #desporto small {
+    font-size: 40px;
+  }
+}
+
+.lineUp .listaDosArtistas #musica h3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas #musica h4 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lineUp .listaDosArtistas #musica small {
     font-size: 40px;
   }
 }
@@ -1300,6 +1319,12 @@ footer p {
 
 .bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
   font-size: 32px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
+    font-size: 28px;
+  }
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #musica2 h2 {

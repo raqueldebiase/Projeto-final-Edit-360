@@ -80,6 +80,21 @@
                 }
             }
         }
+        #musica{
+            h3{
+                font-size: 20px;
+            }
+            h4{
+                @media screen and (max-width: 400px){
+                    font-size: 32px;
+                }
+            }
+            small {
+                @media screen and (max-width: 400px){
+                    font-size: 40px;
+                }
+            }
+        }
         #musica2{
             h4{
                 @media screen and (max-width: 400px){
