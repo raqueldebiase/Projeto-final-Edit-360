@@ -1278,6 +1278,10 @@ footer p {
   place-items: center;
 }
 
+.bodyCartaz .lineUp .listaDosArtistas .artistas h4 {
+  margin-left: -8px;
+}
+
 .bodyCartaz .lineUp .listaDosArtistas #desporto small {
   font-size: 32px;
 }
@@ -1321,9 +1325,14 @@ footer p {
   place-items: center;
 }
 
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas div {
+    margin: 10px;
+  }
+}
+
 .bodyCartaz .lineUp .listaDosArtistas div h4 {
   font-size: 48px;
-  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 400px) {
@@ -1345,7 +1354,7 @@ footer p {
 
 .bodyCartaz .lineUp .listaDosArtistas div small {
   font-size: 72px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 400px) {
