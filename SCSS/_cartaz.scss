@@ -1,5 +1,18 @@
 .bodyCartaz{
     background-image: url(/imagens/BG/bg_cartaz.png);
+    .bgHeaderLineUp{
+        .menu{
+
+            .logoBuoundi {
+                width: 150%;
+            }
+        }
+        .menuHamburguer{
+            @media screen and (max-width: 400px){
+                margin-right: 10px;
+            }
+        }
+    }
     .bannerPrincipal{
         .sociaisVertical{
             display: flex;
@@ -14,11 +27,6 @@
             }
         }
     }
-    .menuHamburger{
-        @media screen and (max-width: 400px){
-           
-        }
-    }
     .lineUp{
         .listaDosArtistas{
             font-family:"Poppins", sans-serif;
@@ -26,10 +34,17 @@
             .artistas{
                 display: grid;
                 place-items: center;
+                
             }
             #desporto{
                 font-size: 36px;
                 margin-left: -10px;
+                small{
+                    font-size: 32px;
+                }
+                h2{
+                    font-size: 48px;
+                }
             }
             #musica{
                 h4{
@@ -53,7 +68,7 @@
                     font-size: 24px;
                 }
                 h3{
-                    font-size: 24px;
+                    font-size: 20px;
                 }
                 h2{
                     font-size: 40px;
@@ -111,7 +126,6 @@
                 scroll-padding-left: 40px;
                 padding: 20px 0px 0px 40px;
                 display: grid;
-                width: 100%;
                 grid-auto-flow: column;
                 gap: 10px;
                 margin-bottom: 120px;

@@ -1239,6 +1239,16 @@ footer p {
   background-image: url(/imagens/BG/bg_cartaz.png);
 }
 
+.bodyCartaz .bgHeaderLineUp .menu .logoBuoundi {
+  width: 150%;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .bgHeaderLineUp .menuHamburguer {
+    margin-right: 10px;
+  }
+}
+
 .bodyCartaz .bannerPrincipal .sociaisVertical {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1277,6 +1287,14 @@ footer p {
   margin-left: -10px;
 }
 
+.bodyCartaz .lineUp .listaDosArtistas #desporto small {
+  font-size: 32px;
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #desporto h2 {
+  font-size: 48px;
+}
+
 .bodyCartaz .lineUp .listaDosArtistas #musica h4 {
   font-size: 36px;
   margin-left: -10px;
@@ -1299,7 +1317,7 @@ footer p {
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #humor h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #humor h2 {
@@ -1373,7 +1391,6 @@ footer p {
   padding: 20px 0px 0px 40px;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   grid-auto-flow: column;
   gap: 10px;
   margin-bottom: 120px;
