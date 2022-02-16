@@ -66,10 +66,9 @@ body {
 
 @media screen and (max-width: 400px) {
   body {
-    background-size: cover;
-    background-position: center center;
-    -o-object-fit: cover;
-       object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: top center;
   }
 }
 
@@ -648,6 +647,7 @@ body {
     display: flex;
     overflow: hidden;
     margin-bottom: 20px;
+    background-color: purple;
   }
 }
 
@@ -1010,8 +1010,13 @@ article .dirEsq {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 54px;
-  width: 100%;
-  margin-left: 120px;
+  background-color: #181418;
+}
+
+@media screen and (max-width: 400px) {
+  .tituloNovidades h3 {
+    font-size: 32px;
+  }
 }
 
 .bannerNewsletter {
@@ -1022,12 +1027,16 @@ article .dirEsq {
   place-items: center;
   margin-bottom: 120px;
   margin-top: 120px;
+  background-color: #181418;
 }
 
 @media screen and (max-width: 400px) {
   .bannerNewsletter {
-    overflow: hidden;
     width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }
 
@@ -1042,10 +1051,27 @@ article .dirEsq {
   height: 100%;
 }
 
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+  }
+}
+
 .bannerNewsletter .app .txtInstala {
   width: 300px;
   margin-left: 120px;
   margin-top: 60px;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app .txtInstala {
+    margin: 20px 0 20px 20px;
+    width: 150px;
+  }
 }
 
 .bannerNewsletter .app .txtInstala h4 {
@@ -1054,11 +1080,23 @@ article .dirEsq {
   font-size: 39px;
 }
 
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app .txtInstala h4 {
+    font-size: 24px;
+  }
+}
+
 .bannerNewsletter .app .txtInstala .bold {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 39px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app .txtInstala .bold {
+    font-size: 24px;
+  }
 }
 
 .bannerNewsletter .app .buttonStore {
@@ -1072,8 +1110,36 @@ article .dirEsq {
   height: 150px;
 }
 
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app .buttonStore {
+    margin: 40px 0 0 10px;
+  }
+}
+
 .bannerNewsletter .app img {
   margin-top: -80px;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app img {
+    margin-top: -40px;
+  }
+}
+
+.bannerNewsletter .app .iphoneMenor {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app .iphoneMenor {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .app .iphone {
+    display: none;
+  }
 }
 
 .bannerNewsletter .newsletter {
@@ -1092,6 +1158,14 @@ article .dirEsq {
   width: 300px;
 }
 
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .newsletter .bold {
+    margin: 60px 0 0 45px;
+    font-size: 24px;
+    width: 100%;
+  }
+}
+
 .bannerNewsletter .newsletter form .email {
   width: 440px;
   height: 47px;
@@ -1105,6 +1179,7 @@ article .dirEsq {
 @media screen and (max-width: 400px) {
   .bannerNewsletter .newsletter form .email {
     width: 300px;
+    margin: 40px 10px 0 30px;
   }
 }
 
@@ -1117,6 +1192,12 @@ article .dirEsq {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .newsletter form .condicoes {
+    margin-left: 40px;
+  }
 }
 
 .bannerNewsletter .newsletter form .condicoes h6 {
@@ -1139,6 +1220,12 @@ article .dirEsq {
   font-size: 15px;
   text-decoration: none;
   margin: 80px 40px 40px 450px;
+}
+
+@media screen and (max-width: 400px) {
+  .bannerNewsletter .newsletter .buttonSubs {
+    margin-left: 120px;
+  }
 }
 
 .bannerNewsletter .newsletter .buttonSubs a {

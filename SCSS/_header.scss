@@ -3,49 +3,13 @@ body {
     background-size: cover;
     background-position: center center;
     object-fit: cover;
-    // background-repeat: no-repeat;
-    // background-position: initial;
-    // background-position-x: center ;
-    // object-fit: cover;
     @media screen and (max-width: 400px){
-        background-size: cover;
-        background-position: center center;
-        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: auto 50%;
+        background-position: top center;
+        
     }
 }
-
-
-
-// .bgDegrade{
-    
-//     background: rgb(102,53,103);
-//     background: linear-gradient(164deg, rgba(102,53,103,1) 0%, rgba(0,0,0,1) 100%);
-//     overflow: hidden;
-//     @media screen and (max-width: 400px){
-        
-//     }
-// }
-
-// .bgHeaderLineUp{
-//     background-image: url(/imagens/BG/bgPrincipal.svg);
-//     background-size: cover;
-//     background-attachment: fixed;
-//     position: relative;
-//     margin-bottom: -150px;
-//     @media screen and (max-width: 400px){
-//         background-repeat: no-repeat;
-//         background-attachment: fixed;
-//         overflow: hidden;
-//     }
-// }
-
-
-// .bgDoMeio{
-//     height: 200px;
-//     background: rgb(102,53,103);
-//     background: linear-gradient(0deg, rgb(103, 53, 104) 1%, rgb(204, 46, 52) 94%);     
-// }
-
 
 
 .menu {
