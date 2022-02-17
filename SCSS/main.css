@@ -69,6 +69,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto 50%;
     background-position: top center;
+    background-color: #181418;
   }
 }
 
@@ -808,7 +809,7 @@ article div h3 {
 
 @media screen and (max-width: 400px) {
   article div h3 {
-    margin: 80px 0 80px 0;
+    margin: 80px 0 80px 10px;
     font-size: 39px;
   }
 }
@@ -1011,11 +1012,14 @@ article .dirEsq {
   font-family: "Poppins", sans-serif;
   font-size: 54px;
   background-color: #181418;
+  width: 60%;
+  margin-left: 140px;
 }
 
 @media screen and (max-width: 400px) {
   .tituloNovidades h3 {
     font-size: 32px;
+    margin-left: 10px;
   }
 }
 
@@ -1284,6 +1288,14 @@ footer .footerGrid {
 
 footer .footerGrid .patrocinadores {
   margin-top: 60px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+  footer .footerGrid .patrocinadores {
+    width: 80%;
+    margin-bottom: 40px;
+  }
 }
 
 footer .footerGrid .endPraia {
@@ -1305,7 +1317,7 @@ footer .footerGrid .sociaisFooter a {
 }
 
 footer .footerGrid .listaFooter {
-  margin: 40px 0 40px 0;
+  margin: 40px;
   max-width: 100%;
 }
 
@@ -1327,7 +1339,6 @@ footer .footerGrid .listaFooter ul {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
-    padding: 20px;
     gap: 10px;
     overflow: hidden;
   }
@@ -1506,46 +1517,134 @@ footer p {
   margin-left: -8px;
 }
 
-.bodyCartaz .lineUp .listaDosArtistas #desporto small {
-  font-size: 32px;
-}
-
-.bodyCartaz .lineUp .listaDosArtistas #desporto h2 {
+.bodyCartaz .lineUp .listaDosArtistas #desporto h4 {
   font-size: 48px;
 }
 
-.bodyCartaz .lineUp .listaDosArtistas #musica h4 {
-  font-size: 36px;
-}
-
-.bodyCartaz .lineUp .listaDosArtistas #musica h3 {
-  font-size: 24px;
-}
-
-.bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
-  font-size: 32px;
-}
-
 @media screen and (max-width: 400px) {
-  .bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
+  .bodyCartaz .lineUp .listaDosArtistas #desporto h4 {
     font-size: 28px;
   }
 }
 
+.bodyCartaz .lineUp .listaDosArtistas #desporto p {
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #desporto p {
+    font-size: 24px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #desporto small {
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #desporto small {
+    font-size: 32px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #desporto h2 {
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #desporto h2 {
+    font-size: 43px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica h4 {
+  font-size: 48px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica h4 {
+    font-size: 28px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica h3 {
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica h3 {
+    font-size: 32px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica h2 {
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica h2 {
+    font-size: 43px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica2 h4 {
+  font-size: 48px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica2 h4 {
+    font-size: 28px;
+  }
+}
+
+.bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica2 h3 {
+    font-size: 40px;
+  }
+}
+
 .bodyCartaz .lineUp .listaDosArtistas #musica2 h2 {
-  font-size: 40px;
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #musica2 h2 {
+    font-size: 43px;
+  }
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #humor h4 {
-  font-size: 24px;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #humor h4 {
+    font-size: 28px;
+  }
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #humor h3 {
-  font-size: 20px;
+  font-size: 67px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #humor h3 {
+    font-size: 20px;
+  }
 }
 
 .bodyCartaz .lineUp .listaDosArtistas #humor h2 {
-  font-size: 40px;
+  font-size: 87px;
+}
+
+@media screen and (max-width: 400px) {
+  .bodyCartaz .lineUp .listaDosArtistas #humor h2 {
+    font-size: 43px;
+  }
 }
 
 .bodyCartaz .lineUp .listaDosArtistas div {
